@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C38DB012381CA8007F4953 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DAF12381CA8007F4953 /* EventKit.framework */; };
+		00C38DB212381CB0007F4953 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DB112381CB0007F4953 /* EventKitUI.framework */; };
+		00C38DC512381CF5007F4953 /* libicalvcal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DC412381CF5007F4953 /* libicalvcal.a */; };
+		00C38DC712381CF5007F4953 /* libicalss.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DC612381CF5007F4953 /* libicalss.a */; };
+		00C38DC912381CF5007F4953 /* libical.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DC812381CF5007F4953 /* libical.a */; };
+		00C38E2C123872AB007F4953 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38E2B123872AB007F4953 /* iAd.framework */; };
+		00C4349712429E1000027E31 /* DateTimeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C4349612429E1000027E31 /* DateTimeTableViewCell.m */; };
+		00C4349912429E3A00027E31 /* DateTimeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00C4349812429E3A00027E31 /* DateTimeTableViewCell.xib */; };
+		00D91E20124EDF760014A92B /* IntroView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00D91E1F124EDF760014A92B /* IntroView.xib */; };
+		00E7244F12597AB9005C2D37 /* ics-24x31.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E7244D12597AB9005C2D37 /* ics-24x31.png */; };
+		00E7245012597AB9005C2D37 /* ics-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E7244E12597AB9005C2D37 /* ics-57x57.png */; };
+		00E7245412597D58005C2D37 /* default.png in Resources */ = {isa = PBXBuildFile; fileRef = 00E7245312597D58005C2D37 /* default.png */; };
+		1D3623260D0F684500981E51 /* ICS_ReaderAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */; };
+		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
+		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
+		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0054C0B81256C173002AA2E6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		00C38DAF12381CA8007F4953 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		00C38DB112381CB0007F4953 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		00C38DC412381CF5007F4953 /* libicalvcal.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicalvcal.a; path = /Users/mmetzger/Documents/Projects/iPhone/parsecal/libicalvcal.a; sourceTree = "<absolute>"; };
+		00C38DC612381CF5007F4953 /* libicalss.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libicalss.a; path = /Users/mmetzger/Documents/Projects/iPhone/parsecal/libicalss.a; sourceTree = "<absolute>"; };
+		00C38DC812381CF5007F4953 /* libical.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libical.a; path = /Users/mmetzger/Documents/Projects/iPhone/parsecal/libical.a; sourceTree = "<absolute>"; };
+		00C38E2B123872AB007F4953 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		00C4349512429E1000027E31 /* DateTimeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeTableViewCell.h; sourceTree = "<group>"; };
+		00C4349612429E1000027E31 /* DateTimeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeTableViewCell.m; sourceTree = "<group>"; };
+		00C4349812429E3A00027E31 /* DateTimeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateTimeTableViewCell.xib; sourceTree = "<group>"; };
+		00D91E1F124EDF760014A92B /* IntroView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroView.xib; sourceTree = "<group>"; };
+		00E7244D12597AB9005C2D37 /* ics-24x31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ics-24x31.png"; sourceTree = "<group>"; };
+		00E7244E12597AB9005C2D37 /* ics-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ics-57x57.png"; sourceTree = "<group>"; };
+		00E7245312597D58005C2D37 /* default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default.png; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICS_ReaderAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICS_ReaderAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ICS Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ICS Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AAE50D9B0CCF005BE974 /* ICS_Reader_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICS_Reader_Prefix.pch; sourceTree = "<group>"; };
+		28AD735F0D9D9599002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		28C286E00D94DF7D0034E888 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		28F335F01007B36200424DE2 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ICS_Reader-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				00C38DB012381CA8007F4953 /* EventKit.framework in Frameworks */,
+				00C38DB212381CB0007F4953 /* EventKitUI.framework in Frameworks */,
+				00C38DC512381CF5007F4953 /* libicalvcal.a in Frameworks */,
+				00C38DC712381CF5007F4953 /* libicalss.a in Frameworks */,
+				00C38DC912381CF5007F4953 /* libical.a in Frameworks */,
+				00C38E2C123872AB007F4953 /* iAd.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+				1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */,
+				00C4349512429E1000027E31 /* DateTimeTableViewCell.h */,
+				00C4349612429E1000027E31 /* DateTimeTableViewCell.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ICS Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				0054C0B81256C173002AA2E6 /* Entitlements.plist */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AAE50D9B0CCF005BE974 /* ICS_Reader_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00E7245312597D58005C2D37 /* default.png */,
+				00E7244D12597AB9005C2D37 /* ics-24x31.png */,
+				00E7244E12597AB9005C2D37 /* ics-57x57.png */,
+				28F335F01007B36200424DE2 /* RootViewController.xib */,
+				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */,
+				00C4349812429E3A00027E31 /* DateTimeTableViewCell.xib */,
+				00D91E1F124EDF760014A92B /* IntroView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00C38E2B123872AB007F4953 /* iAd.framework */,
+				00C38DAF12381CA8007F4953 /* EventKit.framework */,
+				00C38DB112381CB0007F4953 /* EventKitUI.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				00C38DC412381CF5007F4953 /* libicalvcal.a */,
+				00C38DC612381CF5007F4953 /* libicalss.a */,
+				00C38DC812381CF5007F4953 /* libical.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ICS Reader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ICS Reader" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ICS Reader";
+			productName = "ICS Reader";
+			productReference = 1D6058910D05DD3D006BFB54 /* ICS Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Psycho Pigeon Software";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ICS Reader" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ICS Reader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
+				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
+				00C4349912429E3A00027E31 /* DateTimeTableViewCell.xib in Resources */,
+				00D91E20124EDF760014A92B /* IntroView.xib in Resources */,
+				00E7244F12597AB9005C2D37 /* ics-24x31.png in Resources */,
+				00E7245012597AB9005C2D37 /* ics-57x57.png in Resources */,
+				00E7245412597D58005C2D37 /* default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ICS_ReaderAppDelegate.m in Sources */,
+				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
+				00C4349712429E1000027E31 /* DateTimeTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0054C0B51256C0DF002AA2E6 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/lib//**";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.1;
+				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
+			};
+			name = Distribution;
+		};
+		0054C0B61256C0DF002AA2E6 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Psycho Pigeon Software";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ICS_Reader_Prefix.pch;
+				INFOPLIST_FILE = "ICS_Reader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../parsecal\"",
+				);
+				PRODUCT_NAME = "ICS Reader";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		00E724A31259AB2A005C2D37 /* Distribution AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Psycho Pigeon Software";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/lib//**";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E508A0E4-5583-46C5-8E72-A46F869467AB";
+				SDKROOT = iphoneos4.1;
+				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
+			};
+			name = "Distribution AppStore";
+		};
+		00E724A41259AB2A005C2D37 /* Distribution AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Psycho Pigeon Software";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ICS_Reader_Prefix.pch;
+				INFOPLIST_FILE = "ICS_Reader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../parsecal\"",
+				);
+				PRODUCT_NAME = "ICS Reader";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Distribution AppStore";
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ICS_Reader_Prefix.pch;
+				INFOPLIST_FILE = "ICS_Reader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../parsecal\"",
+				);
+				PRODUCT_NAME = "ICS Reader";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ICS_Reader_Prefix.pch;
+				INFOPLIST_FILE = "ICS_Reader-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../parsecal\"",
+				);
+				PRODUCT_NAME = "ICS Reader";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Metzger (K2A248HR97)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/lib//**";
+				PREBINDING = NO;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4655F9C-3244-462B-9D6E-05B36023EF43";
+				SDKROOT = iphoneos4.1;
+				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ICS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				0054C0B61256C0DF002AA2E6 /* Distribution */,
+				00E724A41259AB2A005C2D37 /* Distribution AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ICS Reader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				0054C0B51256C0DF002AA2E6 /* Distribution */,
+				00E724A31259AB2A005C2D37 /* Distribution AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

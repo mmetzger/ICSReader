@@ -1,0 +1,493 @@
+TICS Reader
+v7
+r0
+t307849722.265944
+cCheck dependencies
+cProcessInfoPlistFile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/Info.plist" ICS_Reader-Info.plist
+cCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib"
+cCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib"
+cCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib"
+cCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57.png" ics-57x57.png
+cCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57-2.png" ics-57x57-2.png
+cCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-24x31.png" ics-24x31.png
+cCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib"
+cProcessPCH /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch.gch ICS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/main.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS_ReaderAppDelegate.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/RootViewController.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/DateTimeTableViewCell.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader" normal i386
+cGenerateDSYMFile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app.dSYM" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader"
+cTouch "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk
+c000000004C6C30170000000000000110
+t1282158615
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A4DB60000000000295900
+t1280986550
+s2709760
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/EventKit.framework/EventKit
+c000000004C64B71500000000000C04D0
+t1281668885
+s787664
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.h
+c000000004C64B70C00000000000001B3
+t1281668876
+s435
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/EventKitUI.framework/EventKitUI
+c000000004C5E1F7D00000000001417B0
+t1281236861
+s1316784
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUI.h
+c000000004C5E1F5000000000000000DD
+t1281236816
+s221
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A4DB0000000000029D580
+t1280986544
+s2741632
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A4DA10000000000001466
+t1280986529
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C6241ED00000000000009CD
+t1281507821
+s2509
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C6242840000000001E228C0
+t1281507972
+s31598784
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/iAd.framework/Headers/iAd.h
+c000000004C6C305C0000000000000071
+t1282158684
+s113
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/System/Library/Frameworks/iAd.framework/iAd
+c000000004C6C30600000000000057F80
+t1282158688
+s360320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/Availability.h
+c000000004C57A0390000000000001A5C
+t1280811065
+s6748
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/assert.h
+c000000004C5790910000000000000DCB
+t1280807057
+s3531
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/stdio.h
+c000000004C57909200000000000040AC
+t1280807058
+s16556
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/sys/types.h
+c000000004C5798ED0000000000002905
+t1280809197
+s10501
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/include/time.h
+c000000004C579092000000000000178E
+t1280807058
+s6030
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11983400000000000010DD
+t1242667060
+s4317
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A1198340000000000003197
+t1242667060
+s12695
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.h
+c000000004C9271860000000000000188
+t1284665734
+s392
+i<UIKit/UIKit.h>
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m
+c000000004C926E0500000000000002F7
+t1284664837
+s759
+i"DateTimeTableViewCell.h"
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.h
+c000000004C9EAA800000000000000232
+t1285466752
+s562
+i<UIKit/UIKit.h>
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m
+c000000004C9FC4CF0000000000001151
+t1285539023
+s4433
+i"ICS_ReaderAppDelegate.h"
+i"RootViewController.h"
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.h
+c000000004C926A8B00000000000004D1
+t1284663947
+s1233
+i<UIKit/UIKit.h>
+i<iAd/iAd.h>
+i<EventKit/EventKit.h>
+i<EventKitUI/EventKitUI.h>
+i"DateTimeTableViewCell.h"
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m
+c000000004CA9327800000000000065B4
+t1286156920
+s26036
+i"RootViewController.h"
+i"ICS_ReaderAppDelegate.h"
+i"libical/ical.h"
+i<EventKit/EventKit.h>
+i<EventKitUI/EventKitUI.h>
+i"DateTimeTableViewCell.h"
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib
+c000000004C9271FA00000000000065E9
+t1284665850
+s26089
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader_Prefix.pch
+c000000004C87E4B30000000000000146
+t1283974323
+s326
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib
+c000000004CA06D4C0000000000004EDC
+t1285582156
+s20188
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib
+c000000004C883B880000000000006000
+t1283996552
+s24576
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib
+c000000004C8C57840000000000005B72
+t1284265860
+s23410
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app
+t1286156922
+s408
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app.dSYM
+t1286156922
+s102
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/DateTimeTableViewCell.nib
+t1286147708
+s1983
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader
+t1286156922
+s367068
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/Info.plist
+t1286147707
+s916
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/IntroView.nib
+t1286147709
+s2229
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/MainWindow.nib
+t1286147708
+s1512
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/PkgInfo
+t1286147707
+s8
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/RootViewController.nib
+t1286147708
+s1510
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ics-24x31.png
+t1286147708
+s1922
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57-2.png
+t1286147708
+s2626
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57.png
+t1286147708
+s4430
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/DateTimeTableViewCell.o
+t1286147710
+s37532
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS Reader.LinkFileList
+c000000004CA90E7B0000000000000284
+t1286147707
+s644
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS_ReaderAppDelegate.o
+t1286147710
+s54684
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/RootViewController.o
+t1286156922
+s105516
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/main.o
+t1286147710
+s6316
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-24x31.png
+c000000004C9874D50000000000000782
+t1285059797
+s1922
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57-2.png
+c000000004C9872160000000000000A42
+t1285059094
+s2626
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57.png
+c000000004C987019000000000000114E
+t1285058585
+s4430
+
+N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m
+c000000004C87E4B3000000000000016B
+t1283974323
+s363
+i<UIKit/UIKit.h>
+
+N/Users/mmetzger/Documents/Projects/iPhone/parsecal/libical.a
+c000000004C59CBDC00000000001CFE78
+t1280953308
+s1900152
+
+N/Users/mmetzger/Documents/Projects/iPhone/parsecal/libicalss.a
+c000000004C59CC300000000000086E48
+t1280953392
+s552520
+
+N/Users/mmetzger/Documents/Projects/iPhone/parsecal/libicalvcal.a
+c000000004C59CC6E000000000004B888
+t1280953454
+s309384
+
+N/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical/ical.h
+c000000004C59CCC50000000000020C03
+t1280953541
+s134147
+i<time.h>
+i<time.h>
+i<time.h>
+i<time.h>
+i<time.h>
+i<time.h>
+i<stdarg.h>
+i<stdio.h>
+i<stdio.h>
+i<sys/types.h>
+i<stddef.h>
+i<assert.h>
+i<stdio.h>
+
+N/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch.gch
+t1286147709
+s14871568
+
+NICS_Reader-Info.plist
+c000000004C98750000000000000005A0
+t1285059840
+s1440
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies307849720#307849720#0(0"0(0#1#0"8622940896#0"0#
+
+CCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/DateTimeTableViewCell.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s307840510.110974
+e307840510.207442
+r1
+xCompileC
+xbuild/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/DateTimeTableViewCell.o
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m307840510#307840510#0(0"0(0#0#84"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m8613065504#2412"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources/i386" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/DateTimeTableViewCell.o"0#
+
+CCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS_ReaderAppDelegate.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s307840509.926256
+e307840510.110856
+r1
+xCompileC
+xbuild/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS_ReaderAppDelegate.o
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m307840509#307840510#0(0"0(0#0#84"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m8606972992#2412"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources/i386" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS_ReaderAppDelegate.o"0#
+
+CCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/RootViewController.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s307849720.891410
+e307849722.117989
+r1
+xCompileC
+xbuild/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/RootViewController.o
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m: In function '-[RootViewController parseICS]':
+o/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:240: warning: initialization discards qualifiers from pointer target type
+o/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
+o/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:476: warning: local declaration of 'tableView' hides instance variable
+o/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:510: warning: local declaration of 'tableView' hides instance variable
+lSLF07#2@89"Compile /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m307849720#307849722#0(744"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m: In function '-[RootViewController parseICS]':/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:240: warning: initialization discards qualifiers from pointer target type/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:476: warning: local declaration of 'tableView' hides instance variable/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m:510: warning: local declaration of 'tableView' hides instance variable3(22@59"Initialization discards qualifiers from pointer target type307849721#129#156#0(6@81"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m307849720#240#0#240#0#0"0(22@56"Local declaration of 'tableView' hides instance variable307849721#438#153#0(6@81"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m307849720#476#0#476#0#0"0(22@56"Local declaration of 'tableView' hides instance variable307849721#591#153#0(6@81"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m307849720#510#0#510#0#0"0(0#0#81"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m8624129568#2406"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources/i386" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/RootViewController.o"0#
+
+CCompileC "build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/main.o" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m" normal i386 objective-c com.apple.compilers.gcc.4_2
+s307840509.925149
+e307840510.005728
+r1
+xCompileC
+xbuild/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/main.o
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m307840509#307840510#0(0"0(0#0#59"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m8599154176#2370"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources/i386" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/main.m" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/main.o"0#
+
+CCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib"
+s307840508.451455
+e307840509.029680
+r1
+xCompileXIB
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib
+lSLF07#2@36"CompileXIB DateTimeTableViewCell.xib307840508#307840509#0(0"0(0#0#78"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib8609122720#650"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/DateTimeTableViewCell.nib" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib"
+s307840508.561647
+e307840509.149311
+r1
+xCompileXIB
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@24"CompileXIB IntroView.xib307840508#307840509#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#66"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib8599021824#626"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/IntroView.nib" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/IntroView.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib"
+s307840507.921592
+e307840508.451354
+r1
+xCompileXIB
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib307840507#307840508#0(0"0(0#0#67"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib8612358720#628"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/MainWindow.nib" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/MainWindow.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCompileXIB "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib"
+s307840507.924163
+e307840508.558066
+r1
+xCompileXIB
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib307840507#307840508#0(0"0(0#0#75"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib8610700640#644"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/RootViewController.nib" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/RootViewController.xib" --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk0#
+
+CCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-24x31.png" ics-24x31.png
+s307840508.559979
+e307840508.579580
+r1
+xCpResource
+xbuild/Distribution-iphonesimulator/ICS Reader.app/ics-24x31.png
+xics-24x31.png
+lSLF07#2@18"Copy ics-24x31.png307840508#307840508#0(0"0(0#0#66"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-24x31.png8601432128#536"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-24x31.png" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"0#
+
+CCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57-2.png" ics-57x57-2.png
+s307840508.559006
+e307840508.580015
+r1
+xCpResource
+xbuild/Distribution-iphonesimulator/ICS Reader.app/ics-57x57-2.png
+xics-57x57-2.png
+lSLF07#2@20"Copy ics-57x57-2.png307840508#307840508#0(0"0(0#0#68"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57-2.png8606410592#538"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57-2.png" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"0#
+
+CCpResource "build/Distribution-iphonesimulator/ICS Reader.app/ics-57x57.png" ics-57x57.png
+s307840508.558174
+e307840508.578049
+r1
+xCpResource
+xbuild/Distribution-iphonesimulator/ICS Reader.app/ics-57x57.png
+xics-57x57.png
+lSLF07#2@18"Copy ics-57x57.png307840508#307840508#0(0"0(0#0#66"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57.png8607895840#536"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57.png" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"0#
+
+CGenerateDSYMFile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app.dSYM" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader"
+s307849722.188006
+e307849722.263003
+r1
+xGenerateDSYMFile
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app.dSYM
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader
+lSLF07#2@136"GenerateDSYMFile "build/Distribution-iphonesimulator/ICS Reader.app.dSYM" "build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader"307849722#307849722#0(0"0(0#0#113"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader8603079296#454"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app.dSYM"0#
+
+CLd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader" normal i386
+s307849722.118079
+e307849722.187900
+r1
+xLd
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader
+xnormal
+xi386
+lSLF07#2@118"Link /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader307849722#307849722#0(0"0(0#0#0"8629202880#1221"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk "-L/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -L/Users/mmetzger/TestDeveloper/iOS4-fat/lib "-L/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/../parsecal" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -filelist "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/Objects-normal/i386/ICS Reader.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework EventKit -framework EventKitUI -licalvcal -licalss -lical -framework iAd -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/ICS Reader"0#
+
+CProcessInfoPlistFile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/Info.plist" ICS_Reader-Info.plist
+s307840507.794787
+e307840507.921491
+r1
+xProcessInfoPlistFile
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/Info.plist
+xICS_Reader-Info.plist
+lSLF07#2@29"Process ICS_Reader-Info.plist307840507#307840507#0(0"0(0#0#74"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist8608073408#550"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ICS_Reader-Info.plist -genpkginfo "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app/Info.plist"0#
+
+CProcessPCH /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch.gch ICS_Reader_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s307840509.149530
+e307840509.924940
+r1
+xProcessPCH
+x/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch.gch
+xICS_Reader_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile ICS_Reader_Prefix.pch307840509#307840509#0(0"0(0#0#74"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader_Prefix.pch8612574336#2236"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40000 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources/i386" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution-iphonesimulator/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader_Prefix.pch" -o /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-ccckpxtqugvjpvciuabvumjkwxnf/ICS_Reader_Prefix.pch.gch0#
+
+CTouch "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"
+s307849722.263102
+e307849722.265908
+r1
+xTouch
+x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app
+lSLF07#2@108"Touch /Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app307849722#307849722#0(0"0(0#0#0"8626030976#320"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution-iphonesimulator/ICS Reader.app"0#
+

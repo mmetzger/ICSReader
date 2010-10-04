@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>DateTimeTableViewCell.nib</key>
+		<data>
+		KMHX1rxo10bKFgbb36gH3qothXA=
+		</data>
+		<key>IntroView.nib</key>
+		<data>
+		2//qhw/TOqPKnrvA+ilGZmGFj2A=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		H6tJkZu9EV9jAtUbDuItMj1iz4s=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>RootViewController.nib</key>
+		<data>
+		zThtLK6VB0JP/EcTJig5r1bStt4=
+		</data>
+		<key>default.png</key>
+		<data>
+		fpJBG5W+afxnWnJ7n/Lnrq/eSHQ=
+		</data>
+		<key>embedded.mobileprovision</key>
+		<data>
+		9rNtz1vy2QQXa8U5Bfd/wUdd+9U=
+		</data>
+		<key>ics-24x31.png</key>
+		<data>
+		Gheu+uUS5v1FGFWaJ7Dq7gxRlZQ=
+		</data>
+		<key>ics-57x57.png</key>
+		<data>
+		VclAybwNgsyM0dPtIUmphMFjpLQ=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

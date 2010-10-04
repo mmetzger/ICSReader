@@ -1,0 +1,12 @@
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:14: error: no declaration of property 'dtstart' found in the interface
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:15: error: no declaration of property 'dtend' found in the interface
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m: In function '-[DateTimeTableViewCell dealloc]':
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: 'dtstart' undeclared (first use in this function)
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: (Each undeclared identifier is reported only once
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: for each function it appears in.)
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:35: error: 'dtend' undeclared (first use in this function)
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m: At top level:
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:40: warning: property 'start' requires method '-start' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:40: warning: property 'start' requires the method 'setStart:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:40: warning: property 'end' requires method '-end' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:40: warning: property 'end' requires the method 'setEnd:' to be defined - use @synthesize, @dynamic or provide a method implementation

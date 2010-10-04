@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	0054C0C51256C27C002AA2E6 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 0054C0B81256C173002AA2E6 /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	00C38DA812381C33007F4953 /* ICS Reader */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "ICS Reader";
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	00C38DAD12381C54007F4953 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	00C38DAE12381C54007F4953 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	00C4349512429E1000027E31 /* DateTimeTableViewCell.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1032, 1046}}";
+			sepNavSelRange = "{271, 0}";
+			sepNavVisRange = "{0, 392}";
+			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
+		};
+	};
+	00C4349612429E1000027E31 /* DateTimeTableViewCell.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1165, 822}}";
+			sepNavSelRange = "{715, 0}";
+			sepNavVisRange = "{0, 759}";
+		};
+	};
+	00C4356D1248A7F100027E31 /* ics-57x57.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = "ics-57x57.png";
+		path = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57.png";
+		sourceTree = "<absolute>";
+	};
+	00C435711248A9A800027E31 /* ics-57x57-2.png */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = image.png;
+		name = "ics-57x57-2.png";
+		path = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57-2.png";
+		sourceTree = "<absolute>";
+	};
+	00C435791248AA0200027E31 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 00C4356D1248A7F100027E31 /* ics-57x57.png */;
+	};
+	00C43599124AE2CF00027E31 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 00C435711248A9A800027E31 /* ics-57x57-2.png */;
+	};
+	00E7245312597D58005C2D37 /* default.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
+		};
+	};
+	00E7249C12598D11005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00C4349612429E1000027E31 /* DateTimeTableViewCell.m */;
+		name = "DateTimeTableViewCell.m: 35";
+		rLen = 0;
+		rLoc = 715;
+		rType = 0;
+		vrLen = 759;
+		vrLoc = 0;
+	};
+	00E7249D12598D11005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00C4349512429E1000027E31 /* DateTimeTableViewCell.h */;
+		name = "DateTimeTableViewCell.h: 14";
+		rLen = 0;
+		rLoc = 271;
+		rType = 0;
+		vrLen = 392;
+		vrLoc = 0;
+	};
+	00E724DD1259AE21005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 13";
+		rLen = 0;
+		rLoc = 294;
+		rType = 0;
+		vrLen = 1238;
+		vrLoc = 0;
+	};
+	00E724DE1259AE21005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 435";
+		rLen = 0;
+		rLoc = 16219;
+		rType = 0;
+		vrLen = 2279;
+		vrLoc = 15001;
+	};
+	00E724DF1259AE21005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */;
+		name = "ICS_ReaderAppDelegate.h: 21";
+		rLen = 0;
+		rLoc = 560;
+		rType = 0;
+		vrLen = 603;
+		vrLoc = 0;
+	};
+	00E724E01259AE21005C2D37 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */;
+		name = "ICS_ReaderAppDelegate.m: 31";
+		rLen = 0;
+		rLoc = 783;
+		rType = 0;
+		vrLen = 2067;
+		vrLoc = 0;
+	};
+	00E724E11259AE21005C2D37 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	00E724E31259AF4F005C2D37 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {600, 325}}";
+			sepNavSelRange = "{597, 0}";
+			sepNavVisRange = "{155, 421}";
+			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1300, 1846}}";
+			sepNavSelRange = "{783, 0}";
+			sepNavVisRange = "{0, 2067}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* ICS Reader */ = {
+		activeExec = 0;
+		executables = (
+			00C38DA812381C33007F4953 /* ICS Reader */,
+		);
+	};
+	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1165, 799}}";
+			sepNavSelRange = "{294, 0}";
+			sepNavVisRange = "{0, 1238}";
+		};
+	};
+	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSTimeInterval)secs\";\n            r = \"{5730, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{25505, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{25556, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{25606, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 26261}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1426, 9243}}";
+			sepNavSelRange = "{16196, 0}";
+			sepNavVisRange = "{14978, 2279}";
+			sepNavWindowFrame = "{{829, 4}, {1091, 1174}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = "Distribution AppStore";
+		activeExecutable = 00C38DA812381C33007F4953 /* ICS Reader */;
+		activeSDKPreference = iphoneos4.1;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ICS Reader */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* ICS Reader */,
+		);
+		codeSenseManager = 00C38DAE12381C54007F4953 /* Code sense */;
+		executables = (
+			00C38DA812381C33007F4953 /* ICS Reader */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					799,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					987,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					947,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 307840346;
+			PBXWorkspaceStateSaveDate = 307840346;
+		};
+		perUserProjectItems = {
+			0054C0C51256C27C002AA2E6 /* PlistBookmark */ = 0054C0C51256C27C002AA2E6 /* PlistBookmark */;
+			00C435791248AA0200027E31 /* PBXBookmark */ = 00C435791248AA0200027E31 /* PBXBookmark */;
+			00C43599124AE2CF00027E31 /* PBXBookmark */ = 00C43599124AE2CF00027E31 /* PBXBookmark */;
+			00E7249C12598D11005C2D37 /* PBXTextBookmark */ = 00E7249C12598D11005C2D37 /* PBXTextBookmark */;
+			00E7249D12598D11005C2D37 /* PBXTextBookmark */ = 00E7249D12598D11005C2D37 /* PBXTextBookmark */;
+			00E724DD1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DD1259AE21005C2D37 /* PBXTextBookmark */;
+			00E724DE1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DE1259AE21005C2D37 /* PBXTextBookmark */;
+			00E724DF1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DF1259AE21005C2D37 /* PBXTextBookmark */;
+			00E724E01259AE21005C2D37 /* PBXTextBookmark */ = 00E724E01259AE21005C2D37 /* PBXTextBookmark */;
+			00E724E11259AE21005C2D37 /* PlistBookmark */ = 00E724E11259AE21005C2D37 /* PlistBookmark */;
+			00E724E31259AF4F005C2D37 /* PlistBookmark */ = 00E724E31259AF4F005C2D37 /* PlistBookmark */;
+		};
+		sourceControlManager = 00C38DAD12381C54007F4953 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1179, 850}}";
+			sepNavSelRange = "{960, 0}";
+			sepNavVisRect = "{{0, 0}, {1179, 850}}";
+			sepNavWindowFrame = "{{764, -5}, {1091, 1174}}";
+		};
+	};
+}
