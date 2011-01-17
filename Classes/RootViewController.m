@@ -12,6 +12,7 @@
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
 #import "DateTimeTableViewCell.h"
+#import <Foundation/Foundation.h>
 
 
 @implementation RootViewController
@@ -93,11 +94,12 @@ didFailToReceiveAdWithError:(NSError *)error
 	[self moveBannerViewOnscreen];
 }
 
-- (NSDate *) parseDate:(NSString *)strDate
+- (NSDate *) parseDate:(NSString *)strDate timezone:(NSString *)tzid
 {
+	NSLog(@"Source string: %@", strDate);
 	NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
 	[formatter setDateFormat:@"yyyyMMddHHmmss"];
-	[formatter setTimeZone:[NSTimeZone timeZoneWithAbbreviation:@"GMT"]];
+	[formatter setTimeZone:[NSTimeZone timeZoneWithName:tzid]];
 	
 	strDate = [[strDate stringByReplacingOccurrencesOfString:@"Z" withString:@""] stringByReplacingOccurrencesOfString:@"T" withString:@""];
 	
@@ -108,6 +110,24 @@ didFailToReceiveAdWithError:(NSError *)error
 	
 	return sourceDate;
 }
+
+- (NSDate *) parseDateNew:(icalproperty *)prop
+{/*
+	struct icaltimetype t;
+	t = icalproperty_get_dtstart(start);
+	
+	NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
+	[formatter setDateFormat:@"yyyyMMddHHmmss"];
+	
+	NSString *str = [[NSString alloc] initWithString:@"%04d%02d%02d%02d%02d%02d", t.year, t.month, t.day, t.hour, t.minute, t.second];
+	
+	NSDate *d = [formatter dateFromString:str];
+	NSLog(@"DateNew: %@", d);
+	
+	return d;
+  */
+}
+    
 
 - (void)parseICS {
 	
@@ -125,6 +145,26 @@ didFailToReceiveAdWithError:(NSError *)error
 		icalcomponent *root = icalparser_parse_string([contents cStringUsingEncoding:NSUTF8StringEncoding]);
 	
 		if (root) {
+			
+			icalcomponent *tzinfo = icalcomponent_get_first_component(root, ICAL_VTIMEZONE_COMPONENT);
+			icaltimezone *zone = icaltimezone_new();
+			NSLog(@"Betting this is an issue in the tzinfo section...");
+			NSString *timezonename;
+			
+			if (tzinfo) {
+				const char *tzid;
+				if (icaltimezone_set_component(zone, tzinfo)) {
+					tzid = icaltimezone_get_tzid(zone);
+					if (tzid) {
+						timezonename = [NSString stringWithCString:tzid encoding:NSUTF8StringEncoding];
+					} else {
+						timezonename = @"GMT";
+					}
+				}
+			}
+			
+			NSLog(@"Timezone is %@", timezonename);
+			
 			icalcomponent *c = icalcomponent_get_first_component(root, ICAL_VEVENT_COMPONENT);
 		
 			while (c) {
@@ -164,10 +204,43 @@ didFailToReceiveAdWithError:(NSError *)error
 				if (start && end) {
 					icalvalue *sv = icalproperty_get_value(start);
 					icalvalue *ev = icalproperty_get_value(end);
+					/*struct icaltimetype t;
+					t = icalproperty_get_dtstart(start);
+					
+                    struct tm d_tm;
+                    memset(&d_tm, 0, sizeof d_tm);
+                    d_tm.tm_year = t.year;
+                    d_tm.tm_mon = t.month;
+                    d_tm.tm_mday = t.day;
+					d_tm.tm_hour = t.hour;
+					d_tm.tm_min = t.minute;
+					
+					struct icaltimetype t2;
+					t2 = icalproperty_get_dtend(end);
+					
+                    struct tm d_tm2;
+                    memset(&d_tm2, 0, sizeof d_tm2);
+                    d_tm2.tm_year = t2.year;
+                    d_tm2.tm_mon = t2.month;
+                    d_tm2.tm_mday = t2.day;
+					d_tm2.tm_hour = t2.hour;
+					d_tm2.tm_min = t2.minute;
+					
+					NSLog(@"Start: %d-%02d-%02d %02d:%02d", d_tm.tm_year, d_tm.tm_mon, d_tm.tm_mday, d_tm.tm_hour, d_tm.tm_min);
+					NSLog(@"End: %d-%02d-%02d %02d:%02d", d_tm2.tm_year, d_tm2.tm_mon, d_tm2.tm_mday, d_tm2.tm_hour, d_tm2.tm_min);
+					
+					
+					//NSLog(icalproperty_get_dtstart(start));
+//					
+					
+					NSLog(@"End Date via ical_get_dtend: %@", icalproperty_get_dtend(end));
+					*/
+					
+					NSDate *startDate = [self parseDate:[NSString stringWithCString:icalvalue_as_ical_string(sv) encoding:NSUTF8StringEncoding] timezone:timezonename];
+					NSDate *endDate = [self parseDate:[NSString stringWithCString:icalvalue_as_ical_string(ev) encoding:NSUTF8StringEncoding] timezone:timezonename];
 				
-					NSDate *startDate = [self parseDate:[NSString stringWithCString:icalvalue_as_ical_string(sv) encoding:NSUTF8StringEncoding]];
-					NSDate *endDate = [self parseDate:[NSString stringWithCString:icalvalue_as_ical_string(ev) encoding:NSUTF8StringEncoding]];
-				
+					
+					//NSDate *s = [self par
 					//startDate = [startDate initWithTimeIntervalSinceNow:<#(NSTimeInterval)secs#>
 				
 					NSLog(@"Starts: %@, Ends: %@", startDate, endDate);
@@ -224,7 +297,15 @@ didFailToReceiveAdWithError:(NSError *)error
 					[calendarDetails setValue:nil forKey:@"FormattedDateTime"];
 					//whenTextField.text = @"";
 				}
-			
+				/*
+				icalproperty *tzidprop = icalcomponent_get_first_property(c, ICAL_TZID_PROPERTY);
+				if (tzidprop)
+				{
+					const char *tzid;
+					tzid = icalproperty_get_tzid(tzidprop);
+					NSLog(@"Timezone: %s", tzid);
+				}
+				 */
 				//icalproperty *attendees = icalcomponent_get_first_property(c, ICAL_
 			
 				icalproperty *organizer = icalcomponent_get_first_property(c, ICAL_ORGANIZER_PROPERTY);
@@ -349,7 +430,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	//[p setValue:@"Mike Metzger" forKey:@"name"];
 	//[p setValue:@"mailto:mike@flexiblecreations.com" forKey:@"URL"];
 	
-	//[addController.event.attendees arrayByAddingObject:d];
+	//[addController.event.attendees arrayByAddingObject:p];
 	//if ([calDetails	valueForKey:@"UID"]) { addController.event.eventIdentifier = [calDetails valueForKey:@"UID"]; }
 		
 	[self presentModalViewController:addController animated:YES];
@@ -368,6 +449,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	
 	switch (action) {
 		case EKEventEditViewActionCanceled:
+			NSLog(@"Event not saved...");
 			break;
 		case EKEventEditViewActionSaved:
 			NSLog(@"Chose to save event...");

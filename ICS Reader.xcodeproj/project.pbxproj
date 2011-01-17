@@ -282,7 +282,7 @@
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E508A0E4-5583-46C5-8E72-A46F869467AB";
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos4.2;
 				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
 			};
 			name = "Distribution AppStore";
@@ -293,6 +293,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Psycho Pigeon Software";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Psycho Pigeon Software";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ICS_Reader_Prefix.pch;
@@ -302,6 +303,8 @@
 					"\"$(SRCROOT)/../parsecal\"",
 				);
 				PRODUCT_NAME = "ICS Reader";
+				PROVISIONING_PROFILE = "E508A0E4-5583-46C5-8E72-A46F869467AB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E508A0E4-5583-46C5-8E72-A46F869467AB";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = "Distribution AppStore";
@@ -311,6 +314,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_ENTITLEMENTS = "~/Documents/Projects/iPhone/ICS Reader/Entitlements.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michael Metzger (K2A248HR97)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -322,6 +326,7 @@
 					"\"$(SRCROOT)/../parsecal\"",
 				);
 				PRODUCT_NAME = "ICS Reader";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3CCB7875-44F1-40A8-B373-56A6778088E6";
 			};
 			name = Debug;
 		};
@@ -355,7 +360,7 @@
 				LIBRARY_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/lib//**";
 				PREBINDING = NO;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4655F9C-3244-462B-9D6E-05B36023EF43";
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
 			};
 			name = Debug;
@@ -368,9 +373,10 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.2;
 			};
 			name = Release;
 		};

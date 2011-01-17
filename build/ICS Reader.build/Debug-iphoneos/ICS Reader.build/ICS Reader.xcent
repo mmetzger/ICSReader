@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>7VZF5ET2T9.com.psychopigeon.icsreader</string>
+	<string>93T744F4BA.com.psychopigeon.icsreader</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>7VZF5ET2T9.com.psychopigeon.icsreader</string>
+		<string>93T744F4BA.com.psychopigeon.icsreader</string>
 	</array>
 </dict>
 </plist>

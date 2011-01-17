@@ -30,7 +30,7 @@
 @property (nonatomic, retain) EKCalendar *defaultCalendar;
 @property (nonatomic, retain) EKEventViewController *detailViewController;
 
-- (NSDate *) parseDate:(NSString *)strDate;
+- (NSDate *) parseDate:(NSString *)strDate timezone:(NSString *)tzid;
 - (void) parseICS;
 - (void) saveEvent;
 - (void) refresh;

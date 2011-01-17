@@ -1,0 +1,3 @@
+vsnprintf.lo vsnprintf.o: vsnprintf.c ../../config.h
+
+../../config.h:

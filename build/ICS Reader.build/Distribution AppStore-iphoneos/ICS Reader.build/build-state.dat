@@ -132,6 +132,106 @@ c000000004C44E63A0000000000003197
 t1279583802
 s12695
 
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
+c000000004CC7DC9E0000000000000110
+t1288166558
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+c000000004CB3DFCF00000000000001E5
+t1286856655
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC10EF500000000003532B0
+t1287720693
+s3486384
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/EventKit.framework/EventKit
+c000000004CC11B260000000000142700
+t1287723814
+s1320704
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/EventKit.framework/Headers/EventKit.h
+c000000004CC11B1B00000000000001B3
+t1287723803
+s435
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/EventKitUI.framework/EventKitUI
+c000000004CC12921000000000018EDD0
+t1287727393
+s1633744
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUI.h
+c000000004CC1290500000000000000DD
+t1287727365
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC10F4700000000003E1F20
+t1287720775
+s4071200
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC10F1C0000000000001466
+t1287720732
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC11AE60000000000000AA1
+t1287723750
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC11B750000000000C769F0
+t1287723893
+s13068784
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/iAd.framework/Headers/iAd.h
+c000000004CC12BDD0000000000000071
+t1287728093
+s113
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/iAd.framework/iAd
+c000000004CC12BE50000000000050EB0
+t1287728101
+s331440
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/Availability.h
+c000000004CB3FBB80000000000001ADD
+t1286863800
+s6877
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/assert.h
+c000000004CB3E4B80000000000000DCB
+t1286857912
+s3531
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/stdio.h
+c000000004CB3E4B800000000000040AC
+t1286857912
+s16556
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/sys/types.h
+c000000004CBFACD90000000000002905
+t1287630041
+s10501
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/time.h
+c000000004CB3E4B8000000000000178E
+t1286857912
+s6030
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/stdarg.h
+c000000004C5A568700000000000010DD
+t1280988807
+s4317
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/lib/gcc/arm-apple-darwin10/4.2.1/include/stddef.h
+c000000004C5A56870000000000003197
+t1280988807
+s12695
+
 N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.h
 c000000004C9271860000000000000188
 t1284665734
@@ -168,15 +268,16 @@ i<EventKitUI/EventKitUI.h>
 i"DateTimeTableViewCell.h"
 
 N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/RootViewController.m
-c000000004CA976580000000000006695
-t1286174296
-s26261
+c000000004D0BE1860000000000006EBB
+t1292624262
+s28347
 i"RootViewController.h"
 i"ICS_ReaderAppDelegate.h"
 i"libical/ical.h"
 i<EventKit/EventKit.h>
 i<EventKitUI/EventKitUI.h>
 i"DateTimeTableViewCell.h"
+i<Foundation/Foundation.h>
 
 N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/DateTimeTableViewCell.xib
 c000000004C9271FA00000000000065E9
@@ -225,7 +326,7 @@ s1985
 
 N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/ICS Reader
 t1286174323
-s314428
+s329184
 
 N/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/Info.plist
 t1286174319
@@ -384,6 +485,10 @@ i<stddef.h>
 i<assert.h>
 i<stdio.h>
 
+N/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-blmqnrfesksdivflyjjukihdmyln/ICS_Reader_Prefix.pch.gch
+t2
+s0
+
 N/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-folzqjmhrmslwtcwcphxtukgliha/ICS_Reader_Prefix.pch.gch
 t1286174321
 s9639472
@@ -391,6 +496,10 @@ s9639472
 N/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-gdrioqowzwtlpdbthzbgrleddplp/ICS_Reader_Prefix.pch.gch
 t1286174321
 s10094128
+
+N/var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-hbvkwdlyqysnvlgnskvlggvmhtbl/ICS_Reader_Prefix.pch.gch
+t2
+s0
 
 NICS_Reader-Info.plist
 c000000004CA976610000000000000617
@@ -591,6 +700,9 @@ xbuild/Distribution AppStore-iphoneos/ICS Reader.app/ResourceRules.plist
 x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist307867119#307867119#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist8636313728#552"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app"0#
 
+CCpResource "build/Distribution AppStore-iphoneos/ICS Reader.app/ResourceRules.plist" /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
+r0
+
 CCreateUniversalBinary "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/ICS Reader" normal "armv6 armv7"
 s307867123.248173
 e307867123.254764
@@ -639,6 +751,9 @@ x/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStor
 xICS_Reader-Info.plist
 lSLF07#2@29"Process ICS_Reader-Info.plist307867119#307867119#0(0"0(0#0#74"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist8623598272#686"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ICS_Reader-Info.plist -genpkginfo "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/ResourceRules.plist" -o "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/ICS Reader.app/Info.plist"0#
 
+CProcessPCH /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-blmqnrfesksdivflyjjukihdmyln/ICS_Reader_Prefix.pch.gch ICS_Reader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
 CProcessPCH /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-folzqjmhrmslwtcwcphxtukgliha/ICS_Reader_Prefix.pch.gch ICS_Reader_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
 s307867120.807503
 e307867121.667374
@@ -664,6 +779,9 @@ xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@32"Precompile ICS_Reader_Prefix.pch307867120#307867121#0(0"0(0#0#74"/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader_Prefix.pch8657785568#2124"    cd "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/ICS Reader-generated-files.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/ICS Reader-own-target-headers.hmap" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/ICS Reader-all-target-headers.hmap" -iquote "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/ICS Reader-project-headers.hmap" "-F/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos" -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include -iquote/Users/mmetzger/TestDeveloper/iOS4-fat/include/libical "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/Distribution AppStore-iphoneos/include" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/DerivedSources/armv7" "-I/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/DerivedSources" -DNS_BLOCK_ASSERTIONS=1 -c "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader_Prefix.pch" -o /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-gdrioqowzwtlpdbthzbgrleddplp/ICS_Reader_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/gG/gGQ-4TkEEdu2qsK4Q290EU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ICS_Reader_Prefix-hbvkwdlyqysnvlgnskvlggvmhtbl/ICS_Reader_Prefix.pch.gch ICS_Reader_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
 
 CProcessProductPackaging "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Entitlements.plist" "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/build/ICS Reader.build/Distribution AppStore-iphoneos/ICS Reader.build/ICS Reader.xcent"
 s307867123.381245

@@ -1,0 +1,11 @@
+prefix=/Users/mmetzger/TestDeveloper/iOS4-sim
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+          
+Name: libical
+Description: An implementation of basic iCAL protocols
+Version: 0.44
+Libs: -L${libdir} -lical -licalss -licalvcal
+Cflags: -I${includedir}/
+

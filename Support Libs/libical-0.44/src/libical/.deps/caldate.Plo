@@ -1,0 +1,3 @@
+caldate.lo caldate.o: caldate.c astime.h
+
+astime.h:

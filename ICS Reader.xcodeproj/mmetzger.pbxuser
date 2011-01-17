@@ -1,5 +1,46 @@
 // !$*UTF8*$!
 {
+	000FDB5012E42E25005A9222 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */;
+		name = "ICS_ReaderAppDelegate.m: 31";
+		rLen = 0;
+		rLoc = 783;
+		rType = 0;
+		vrLen = 2051;
+		vrLoc = 0;
+	};
+	000FDB5112E42E25005A9222 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 456";
+		rLen = 0;
+		rLoc = 16972;
+		rType = 0;
+		vrLen = 2119;
+		vrLoc = 14995;
+	};
+	002DE66412878AB0000948F2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	002DE66712878AB0000948F2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 00C4349612429E1000027E31 /* DateTimeTableViewCell.m */;
+		name = "DateTimeTableViewCell.m: 35";
+		rLen = 0;
+		rLoc = 715;
+		rType = 0;
+		vrLen = 759;
+		vrLoc = 0;
+	};
 	0054C0C51256C27C002AA2E6 /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 0054C0B81256C173002AA2E6 /* Entitlements.plist */;
@@ -65,7 +106,7 @@
 	};
 	00C4349612429E1000027E31 /* DateTimeTableViewCell.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1165, 822}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1165, 814}}";
 			sepNavSelRange = "{715, 0}";
 			sepNavVisRange = "{0, 759}";
 		};
@@ -77,35 +118,44 @@
 		path = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57.png";
 		sourceTree = "<absolute>";
 	};
-	00C435711248A9A800027E31 /* ics-57x57-2.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ics-57x57-2.png";
-		path = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ics-57x57-2.png";
-		sourceTree = "<absolute>";
-	};
 	00C435791248AA0200027E31 /* PBXBookmark */ = {
 		isa = PBXBookmark;
 		fRef = 00C4356D1248A7F100027E31 /* ics-57x57.png */;
 	};
-	00C43599124AE2CF00027E31 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 00C435711248A9A800027E31 /* ics-57x57-2.png */;
+	00DB3AA312DEC78000831A9A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 33";
+		rLen = 0;
+		rLoc = 1126;
+		rType = 0;
+		vrLen = 1264;
+		vrLoc = 0;
+	};
+	00DB3ABB12DEC82A00831A9A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
+		name = "RootViewController.m: 456";
+		rLen = 0;
+		rLoc = 16972;
+		rType = 0;
+		vrLen = 1809;
+		vrLoc = 1261;
+	};
+	00DB3ABC12DEC82A00831A9A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */;
+		name = "ICS_ReaderAppDelegate.h: 21";
+		rLen = 0;
+		rLoc = 560;
+		rType = 0;
+		vrLen = 603;
+		vrLoc = 0;
 	};
 	00E7245312597D58005C2D37 /* default.png */ = {
 		uiCtxt = {
 			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
 		};
-	};
-	00E7249C12598D11005C2D37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 00C4349612429E1000027E31 /* DateTimeTableViewCell.m */;
-		name = "DateTimeTableViewCell.m: 35";
-		rLen = 0;
-		rLoc = 715;
-		rType = 0;
-		vrLen = 759;
-		vrLoc = 0;
 	};
 	00E7249D12598D11005C2D37 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -117,81 +167,19 @@
 		vrLen = 392;
 		vrLoc = 0;
 	};
-	00E724DD1259AE21005C2D37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
-		name = "RootViewController.h: 13";
-		rLen = 0;
-		rLoc = 294;
-		rType = 0;
-		vrLen = 1238;
-		vrLoc = 0;
-	};
-	00E724DE1259AE21005C2D37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
-		name = "RootViewController.m: 435";
-		rLen = 0;
-		rLoc = 16219;
-		rType = 0;
-		vrLen = 2279;
-		vrLoc = 15001;
-	};
-	00E724DF1259AE21005C2D37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */;
-		name = "ICS_ReaderAppDelegate.h: 21";
-		rLen = 0;
-		rLoc = 560;
-		rType = 0;
-		vrLen = 603;
-		vrLoc = 0;
-	};
-	00E724E01259AE21005C2D37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */;
-		name = "ICS_ReaderAppDelegate.m: 31";
-		rLen = 0;
-		rLoc = 783;
-		rType = 0;
-		vrLen = 2067;
-		vrLoc = 0;
-	};
-	00E724E11259AE21005C2D37 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	00E724E31259AF4F005C2D37 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* ICS_Reader-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/ICS_Reader-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
 	1D3623240D0F684500981E51 /* ICS_ReaderAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {600, 325}}";
-			sepNavSelRange = "{597, 0}";
-			sepNavVisRange = "{155, 421}";
+			sepNavIntBoundsRect = "{{0, 0}, {1165, 770}}";
+			sepNavSelRange = "{560, 0}";
+			sepNavVisRange = "{0, 603}";
 			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
 		};
 	};
 	1D3623250D0F684500981E51 /* ICS_ReaderAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1300, 1846}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1833}}";
 			sepNavSelRange = "{783, 0}";
-			sepNavVisRange = "{0, 2067}";
+			sepNavVisRange = "{0, 2051}";
 		};
 	};
 	1D6058900D05DD3D006BFB54 /* ICS Reader */ = {
@@ -202,24 +190,25 @@
 	};
 	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1165, 799}}";
-			sepNavSelRange = "{294, 0}";
-			sepNavVisRange = "{0, 1238}";
+			sepNavIntBoundsRect = "{{0, 0}, {544, 507}}";
+			sepNavSelRange = "{1074, 0}";
+			sepNavVisRange = "{613, 651}";
+			sepNavWindowFrame = "{{15, 4}, {1091, 1174}}";
 		};
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSTimeInterval)secs\";\n            r = \"{5730, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{25505, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{25556, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{25606, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 26261}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1426, 9243}}";
-			sepNavSelRange = "{16196, 0}";
-			sepNavVisRange = "{14978, 2279}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = \"(NSTimeInterval)secs\";\n            r = \"{8064, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{28102, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{28153, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{28203, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 28858}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1909, 10361}}";
+			sepNavSelRange = "{16949, 0}";
+			sepNavVisRange = "{14972, 2119}";
 			sepNavWindowFrame = "{{829, 4}, {1091, 1174}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = "Distribution AppStore";
+		activeBuildConfigurationName = Debug;
 		activeExecutable = 00C38DA812381C33007F4953 /* ICS Reader */;
-		activeSDKPreference = iphoneos4.1;
+		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* ICS Reader */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* ICS Reader */,
@@ -287,21 +276,20 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 307840346;
-			PBXWorkspaceStateSaveDate = 307840346;
+			PBXPerProjectTemplateStateSaveDate = 316943508;
+			PBXWorkspaceStateSaveDate = 316943508;
 		};
 		perUserProjectItems = {
+			000FDB5012E42E25005A9222 /* PBXTextBookmark */ = 000FDB5012E42E25005A9222 /* PBXTextBookmark */;
+			000FDB5112E42E25005A9222 /* PBXTextBookmark */ = 000FDB5112E42E25005A9222 /* PBXTextBookmark */;
+			002DE66412878AB0000948F2 /* PlistBookmark */ = 002DE66412878AB0000948F2 /* PlistBookmark */;
+			002DE66712878AB0000948F2 /* PBXTextBookmark */ = 002DE66712878AB0000948F2 /* PBXTextBookmark */;
 			0054C0C51256C27C002AA2E6 /* PlistBookmark */ = 0054C0C51256C27C002AA2E6 /* PlistBookmark */;
 			00C435791248AA0200027E31 /* PBXBookmark */ = 00C435791248AA0200027E31 /* PBXBookmark */;
-			00C43599124AE2CF00027E31 /* PBXBookmark */ = 00C43599124AE2CF00027E31 /* PBXBookmark */;
-			00E7249C12598D11005C2D37 /* PBXTextBookmark */ = 00E7249C12598D11005C2D37 /* PBXTextBookmark */;
+			00DB3AA312DEC78000831A9A /* PBXTextBookmark */ = 00DB3AA312DEC78000831A9A /* PBXTextBookmark */;
+			00DB3ABB12DEC82A00831A9A /* PBXTextBookmark */ = 00DB3ABB12DEC82A00831A9A /* PBXTextBookmark */;
+			00DB3ABC12DEC82A00831A9A /* PBXTextBookmark */ = 00DB3ABC12DEC82A00831A9A /* PBXTextBookmark */;
 			00E7249D12598D11005C2D37 /* PBXTextBookmark */ = 00E7249D12598D11005C2D37 /* PBXTextBookmark */;
-			00E724DD1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DD1259AE21005C2D37 /* PBXTextBookmark */;
-			00E724DE1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DE1259AE21005C2D37 /* PBXTextBookmark */;
-			00E724DF1259AE21005C2D37 /* PBXTextBookmark */ = 00E724DF1259AE21005C2D37 /* PBXTextBookmark */;
-			00E724E01259AE21005C2D37 /* PBXTextBookmark */ = 00E724E01259AE21005C2D37 /* PBXTextBookmark */;
-			00E724E11259AE21005C2D37 /* PlistBookmark */ = 00E724E11259AE21005C2D37 /* PlistBookmark */;
-			00E724E31259AF4F005C2D37 /* PlistBookmark */ = 00E724E31259AF4F005C2D37 /* PlistBookmark */;
 		};
 		sourceControlManager = 00C38DAD12381C54007F4953 /* Source Control */;
 		userBuildSettings = {
