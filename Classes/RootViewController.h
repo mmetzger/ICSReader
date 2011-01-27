@@ -11,6 +11,7 @@
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
 #import "DateTimeTableViewCell.h"
+#import "HelpViewController.h";
 
 @interface RootViewController : UIViewController <EKEventEditViewDelegate> {
 	NSArray *sectionArray;
@@ -29,10 +30,12 @@
 @property (nonatomic, retain) EKEventStore *eventStore;
 @property (nonatomic, retain) EKCalendar *defaultCalendar;
 @property (nonatomic, retain) EKEventViewController *detailViewController;
+@property (nonatomic, retain) HelpViewController *helpViewController;
 
 - (NSDate *) parseDate:(NSString *)strDate timezone:(NSString *)tzid;
 - (void) parseICS;
 - (void) saveEvent;
 - (void) refresh;
 - (void) addToCalendar:(NSMutableDictionary *)calDetails;
+- (void) showHelp;
 @end

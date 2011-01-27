@@ -18,8 +18,9 @@
 @synthesize isIntro;
 
 - (void) showIntro {
-	NSArray *bundle = [[NSBundle mainBundle] loadNibNamed:@"IntroView" owner:self options:nil];
-	[window addSubview:[bundle objectAtIndex:0]] ;
+	//NSArray *bundle = [[NSBundle mainBundle] loadNibNamed:@"IntroView" owner:self options:nil];
+	//[window addSubview:[bundle objectAtIndex:0]] ;
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"ShowHelp" object:nil];
 	self.isIntro = YES;
 }
 

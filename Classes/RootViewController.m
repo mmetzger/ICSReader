@@ -12,6 +12,7 @@
 #import <EventKit/EventKit.h>
 #import <EventKitUI/EventKitUI.h>
 #import "DateTimeTableViewCell.h"
+#import "HelpViewController.h"
 #import <Foundation/Foundation.h>
 
 
@@ -21,6 +22,7 @@
 @synthesize launchURL;
 @synthesize inviteDetails;
 @synthesize tableView;
+@synthesize helpViewController;
 @synthesize bannerView;
 @synthesize eventStore;
 @synthesize defaultCalendar;
@@ -33,6 +35,7 @@
 	[bannerView release];
     [inviteDetails release];
 	[tableView release];
+	[helpViewController release];
 	[sectionArray release];
 	[launchURL release];
 	[eventStore release];
@@ -406,6 +409,13 @@ didFailToReceiveAdWithError:(NSError *)error
 }
 
 #pragma mark -
+#pragma mark Help Page
+- (void) showHelp {
+	NSLog(@"Help...");
+	[self.navigationController pushViewController:self.helpViewController animated:YES];
+}
+
+#pragma mark -
 #pragma mark Calendar Save
 - (EKCalendar *)eventEditViewControllerDefaultCalendarForNewEvents:(EKEventEditViewController *)controller {
 	EKCalendar *calendarForEdit = self.defaultCalendar;
@@ -473,7 +483,6 @@ didFailToReceiveAdWithError:(NSError *)error
     [super viewDidLoad];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:@"RefreshSent" object:nil];
-	
 	self.bannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:
 													  ADBannerContentSizeIdentifier320x50,
 													  ADBannerContentSizeIdentifier480x32,
@@ -493,9 +502,23 @@ didFailToReceiveAdWithError:(NSError *)error
 	NSLog(@"In RootViewController:viewDidLoad - URL: %@", self.launchURL);
 	self.tableView.sectionFooterHeight = 0.0;
 	
+	self.helpViewController = [[HelpViewController alloc] init];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHelp) name:@"ShowHelp" object:nil];
+	
 	sectionArray = [[NSArray arrayWithObjects:@"Title & Location", @"When", @"Organizer", @"Details", nil] retain];
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	
+	UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] init];
+	leftButton.target = self;
+	leftButton.style = UIBarButtonItemStyleBordered;
+	leftButton.title = @"Help";
+	leftButton.action = @selector(showHelp);
+	leftButton.enabled = YES;
+	
+	self.navigationItem.leftBarButtonItem = leftButton;
+	NSLog(@"Adding help button...");
+	[leftButton release];
 }
 
 
@@ -509,13 +532,13 @@ didFailToReceiveAdWithError:(NSError *)error
  // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	// Return YES for supported orientations.
-	ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
-	if (appDelegate.isIntro)
-	{
-		return NO;
-	} else {
+	//ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
+	//if (appDelegate.isIntro)
+	//{
+	//	return NO;
+	//} else {
 		return YES;
-	}
+	//}
 }
 
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
