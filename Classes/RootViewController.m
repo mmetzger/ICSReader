@@ -404,6 +404,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 - (void) refresh {
 	NSLog(@"Refresh...");
+	[self.navigationController popToRootViewControllerAnimated:NO];
 	ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.launchURL = appDelegate.launchURL;
 	//UIAlertView *someError2 = [[UIAlertView alloc] initWithTitle:@"Setting launchURL in rootview!" message:[self.launchURL absoluteString] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
@@ -480,6 +481,14 @@ didFailToReceiveAdWithError:(NSError *)error
 		case EKEventEditViewActionSaved:
 			NSLog(@"Chose to save event...");
 			[controller.eventStore saveEvent:controller.event span:EKSpanThisEvent error:&error];
+			UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Calendar" message:@"Calendar entry saved!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+			[alert show];
+			ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
+			appDelegate.launchURL = nil;
+			self.launchURL = nil;
+			self.inviteDetails = nil;
+			[self.tableView reloadData];
+			self.navigationItem.rightBarButtonItem = nil;
 			break;
 
 		default:

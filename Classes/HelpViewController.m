@@ -44,6 +44,10 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[self.navigationController popToRootViewControllerAnimated:animated];
+}
 
 
 // Override to allow orientations other than the default portrait orientation.
