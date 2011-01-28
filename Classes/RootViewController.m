@@ -15,6 +15,11 @@
 #import "HelpViewController.h"
 #import <Foundation/Foundation.h>
 
+@interface RootViewController (PrivateMethods)
+-(void) didRotate;
+@end
+
+
 
 @implementation RootViewController
 
@@ -415,6 +420,17 @@ didFailToReceiveAdWithError:(NSError *)error
 	[self.navigationController pushViewController:self.helpViewController animated:YES];
 }
 
+- (void) didRotate {
+	if (UIInterfaceOrientationIsPortrait(self.interfaceOrientation)) {
+		self.bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+		self.contentWidth = [NSNumber numberWithFloat:280.0];
+	} else {
+		self.bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
+		self.contentWidth = [NSNumber numberWithFloat:440.0];
+	}
+
+}
+
 #pragma mark -
 #pragma mark Calendar Save
 - (EKCalendar *)eventEditViewControllerDefaultCalendarForNewEvents:(EKEventEditViewController *)controller {
@@ -483,6 +499,7 @@ didFailToReceiveAdWithError:(NSError *)error
     [super viewDidLoad];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:@"RefreshSent" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate) name:UIDeviceOrientationDidChangeNotification object:nil];
 	self.bannerView.requiredContentSizeIdentifiers = [NSSet setWithObjects:
 													  ADBannerContentSizeIdentifier320x50,
 													  ADBannerContentSizeIdentifier480x32,
@@ -520,7 +537,9 @@ didFailToReceiveAdWithError:(NSError *)error
 	NSLog(@"Adding help button...");
 	[leftButton release];
 	
-	if (!self.launchURL) { [self showHelp]; }
+	if (!self.launchURL) { 
+		[self showHelp]; 
+	}
 }
 
 

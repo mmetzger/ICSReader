@@ -54,8 +54,8 @@
 		[(RootViewController *)navigationController.visibleViewController refresh];
 		self.isIntro = NO;
 	} else {
-		NSLog(@"No url - calling ShowHelp");
-		[self showIntro];
+		//NSLog(@"No url - calling ShowHelp");
+		//[self showIntro];
 	}
 
 	
