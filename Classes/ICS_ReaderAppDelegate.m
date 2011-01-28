@@ -20,6 +20,7 @@
 - (void) showIntro {
 	//NSArray *bundle = [[NSBundle mainBundle] loadNibNamed:@"IntroView" owner:self options:nil];
 	//[window addSubview:[bundle objectAtIndex:0]] ;
+	NSLog(@"Firing ShowHelp");
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"ShowHelp" object:nil];
 	self.isIntro = YES;
 }
@@ -53,6 +54,7 @@
 		[(RootViewController *)navigationController.visibleViewController refresh];
 		self.isIntro = NO;
 	} else {
+		NSLog(@"No url - calling ShowHelp");
 		[self showIntro];
 	}
 

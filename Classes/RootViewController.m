@@ -519,6 +519,8 @@ didFailToReceiveAdWithError:(NSError *)error
 	self.navigationItem.leftBarButtonItem = leftButton;
 	NSLog(@"Adding help button...");
 	[leftButton release];
+	
+	if (!self.launchURL) { [self showHelp]; }
 }
 
 
