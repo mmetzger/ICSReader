@@ -443,6 +443,18 @@ didFailToReceiveAdWithError:(NSError *)error
 {
 	NSLog(@"In AddToCalendar: %@", calDetails);
 	
+	// Check if there's an event at the same time on the calendar
+	NSPredicate *predicate = [self.eventStore predicateForEventsWithStartDate:[calDetails valueForKey:@"StartDate"] endDate:[calDetails valueForKey:@"EndDate"] calendars:nil];
+	
+	NSArray *events = [self.eventStore eventsMatchingPredicate:predicate];
+	
+	if ([events count] > 0)
+	{
+		NSLog(@"%d event(s) found around the same time as new event", [events count]);
+	} else {
+		NSLog(@"No events found at same time");
+	}
+
 	EKEventEditViewController *addController = [[EKEventEditViewController alloc] initWithNibName:nil bundle:nil];
 	
 	addController.eventStore = self.eventStore;
