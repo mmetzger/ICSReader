@@ -34,6 +34,7 @@
 @synthesize detailViewController;
 @synthesize contentWidth;
 @synthesize dtTableCell;
+@synthesize warningLabel;
 
 - (void)dealloc {
 	bannerView.delegate = nil;
@@ -48,6 +49,7 @@
 	[detailViewController release];
 	[contentWidth release];
 	[dtTableCell release];
+	[warningLabel release];
 	[super dealloc];
 }
 
@@ -390,6 +392,24 @@ didFailToReceiveAdWithError:(NSError *)error
 			self.navigationItem.rightBarButtonItem = rightButton;
 			NSLog(@"Adding button...");
 			[rightButton release];
+			
+			// Check if there's an event at the same time on the calendar
+			NSPredicate *predicate = [self.eventStore predicateForEventsWithStartDate:[calendarDetails valueForKey:@"StartDate"] endDate:[calendarDetails valueForKey:@"EndDate"] calendars:nil];
+	
+			NSArray *events = [self.eventStore eventsMatchingPredicate:predicate];
+	
+			if ([events count] == 1)
+			{
+				NSLog(@"%d event(s) found around the same time as new event", [events count]);
+				warningLabel.text = @"This event conflicts with 1 appointment";
+			} else if ([events count] > 0) {
+				NSLog(@"%d event(s) found around the same time as new event", [events count]);
+				warningLabel.text = [NSString stringWithFormat:@"This event conflicts with %d appointments", [events count]];
+			} else {
+				NSLog(@"No events found at same time");
+				warningLabel.text = @"";
+			}
+	
 	
 			[calendarDetails release];
 		}
@@ -442,18 +462,6 @@ didFailToReceiveAdWithError:(NSError *)error
 - (void) addToCalendar:(NSMutableDictionary *)calDetails
 {
 	NSLog(@"In AddToCalendar: %@", calDetails);
-	
-	// Check if there's an event at the same time on the calendar
-	NSPredicate *predicate = [self.eventStore predicateForEventsWithStartDate:[calDetails valueForKey:@"StartDate"] endDate:[calDetails valueForKey:@"EndDate"] calendars:nil];
-	
-	NSArray *events = [self.eventStore eventsMatchingPredicate:predicate];
-	
-	if ([events count] > 0)
-	{
-		NSLog(@"%d event(s) found around the same time as new event", [events count]);
-	} else {
-		NSLog(@"No events found at same time");
-	}
 
 	EKEventEditViewController *addController = [[EKEventEditViewController alloc] initWithNibName:nil bundle:nil];
 	
@@ -501,6 +509,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			self.inviteDetails = nil;
 			[self.tableView reloadData];
 			self.navigationItem.rightBarButtonItem = nil;
+			self.warningLabel.text = @"";
 			break;
 
 		default:
