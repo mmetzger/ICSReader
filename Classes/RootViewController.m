@@ -35,6 +35,8 @@
 @synthesize contentWidth;
 @synthesize dtTableCell;
 @synthesize warningLabel;
+@synthesize noICSWarningLabel;
+@synthesize noICSView;
 
 - (void)dealloc {
 	bannerView.delegate = nil;
@@ -50,6 +52,8 @@
 	[contentWidth release];
 	[dtTableCell release];
 	[warningLabel release];
+	[noICSWarningLabel release];
+	[noICSView release];
 	[super dealloc];
 }
 
@@ -427,6 +431,13 @@ didFailToReceiveAdWithError:(NSError *)error
 	[self.navigationController popToRootViewControllerAnimated:NO];
 	ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.launchURL = appDelegate.launchURL;
+	if (!self.launchURL) { 
+		[self.view bringSubviewToFront:self.noICSView];
+		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
+		[self showHelp]; 
+	} else {
+		[self.view sendSubviewToBack:self.noICSView];
+	}
 	//UIAlertView *someError2 = [[UIAlertView alloc] initWithTitle:@"Setting launchURL in rootview!" message:[self.launchURL absoluteString] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 	//	[someError2 show];
 	//	[someError2 release];
@@ -568,8 +579,15 @@ didFailToReceiveAdWithError:(NSError *)error
 	[leftButton release];
 	
 	if (!self.launchURL) { 
+		noICSView.autoresizingMask = UIViewAutoresizingFlexibleWidth; 
+		noICSWarningLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+		[self.view bringSubviewToFront:self.noICSView];
+		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
 		[self showHelp]; 
+	} else {
+		[self.view sendSubviewToBack:self.noICSView];
 	}
+
 }
 
 
@@ -611,7 +629,13 @@ didFailToReceiveAdWithError:(NSError *)error
 
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 4;
+	if (self.launchURL)
+	{
+		return 4;
+	} else {
+		return 0;
+	}
+
 }
 
 
@@ -646,6 +670,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			cell.textLabel.text = [self.inviteDetails valueForKey:@"Summary"];
 			cell.detailTextLabel.text = [self.inviteDetails valueForKey:@"Location"];
 //			cell.textLabel.text = [[[NSString alloc] init] stringByAppendingFormat:@"%@\n%@", [self.inviteDetails valueForKey:@"Summary"], [inviteDetails objectForKey:@"Location"]];
+			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 			return cell;
 			break;
 		case 1:
@@ -715,6 +740,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			}
 			 */
 			cell.textLabel.text = [self.inviteDetails valueForKey:@"FormattedDateTime"];
+			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 			return cell;
 			
 			break;
@@ -729,6 +755,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			} else {
 				cell.textLabel.text = [self.inviteDetails valueForKey:@"Organizer"];
 			}
+			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 			return cell;
 			break;
 		case 3:
@@ -753,6 +780,8 @@ didFailToReceiveAdWithError:(NSError *)error
 			//cell.textLabel.text = [[[NSString alloc] init] stringByAppendingFormat:@"%@", [self.inviteDetails valueForKey:@"Description"]];
 			//NSLog(@"%@", cell.textLabel.text);
 			//cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
+			
+			cell.selectionStyle = UITableViewCellSelectionStyleNone;
 			return cell;
 			break;
 		default:
@@ -825,10 +854,9 @@ didFailToReceiveAdWithError:(NSError *)error
 	}
 }
 
-
 #pragma mark -
 #pragma mark Table view delegate
-
+/*
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	/*
@@ -838,7 +866,8 @@ didFailToReceiveAdWithError:(NSError *)error
 	 [self.navigationController pushViewController:detailViewController animated:YES];
 	 [detailViewController release];
 	 */
-}
+//}
+
 
 
 #pragma mark -

@@ -27,6 +27,8 @@
 @property (nonatomic, retain) IBOutlet ADBannerView *bannerView;
 @property (nonatomic, retain) IBOutlet DateTimeTableViewCell *dtTableCell;
 @property (nonatomic, retain) IBOutlet UILabel *warningLabel;
+@property (nonatomic, retain) IBOutlet UILabel *noICSWarningLabel;
+@property (nonatomic, retain) IBOutlet UIView *noICSView;
 
 @property (nonatomic, retain) EKEventStore *eventStore;
 @property (nonatomic, retain) EKCalendar *defaultCalendar;
