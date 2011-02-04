@@ -69,11 +69,13 @@
 	NSLog(@"In handleOpenURL\nURL: %@", url);
 	if (url != nil)
 	{
+		NSLog(@"No intro - showing base frame");
 		self.launchURL = url;
 		[window bringSubviewToFront:navigationController.view];
 		self.isIntro = NO;
 		return YES;
 	} else {
+		NSLog(@"URL is nil, showing help");
 		[self showIntro];
 		return NO;
 	}

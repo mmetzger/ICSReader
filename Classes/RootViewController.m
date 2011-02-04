@@ -164,17 +164,18 @@ didFailToReceiveAdWithError:(NSError *)error
 			icalcomponent *tzinfo = icalcomponent_get_first_component(root, ICAL_VTIMEZONE_COMPONENT);
 			icaltimezone *zone = icaltimezone_new();
 			NSLog(@"Betting this is an issue in the tzinfo section...");
-			NSString *timezonename;
+			NSString *timezonename = @"GMT";
 			
 			if (tzinfo) {
+				NSLog(@"In tzinfo check");
 				const char *tzid;
 				if (icaltimezone_set_component(zone, tzinfo)) {
 					tzid = icaltimezone_get_tzid(zone);
 					if (tzid) {
 						timezonename = [NSString stringWithCString:tzid encoding:NSUTF8StringEncoding];
-					} else {
-						timezonename = @"GMT";
-					}
+					} //else {
+					//	timezonename = @"GMT";
+					//}
 				}
 			}
 			
@@ -580,12 +581,14 @@ didFailToReceiveAdWithError:(NSError *)error
 	[leftButton release];
 	
 	if (!self.launchURL) { 
+		NSLog(@"No launchURL");
 		noICSView.autoresizingMask = UIViewAutoresizingFlexibleWidth; 
 		noICSWarningLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		[self.view bringSubviewToFront:self.noICSView];
 		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
 		[self showHelp]; 
 	} else {
+		NSLog(@"LaunchURL defined");
 		[self.view sendSubviewToBack:self.noICSView];
 	}
 
@@ -766,10 +769,10 @@ didFailToReceiveAdWithError:(NSError *)error
     
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 			
-			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			NSLog(@"In Notes...");
-			NSString *d;
-			d = [self.inviteDetails valueForKey:@"Description"];
+			NSString *d = [self.inviteDetails valueForKey:@"Description"];
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+			
 			UIFont *f = [UIFont systemFontOfSize:17];
 			CGSize s;
 			s = [d sizeWithFont:f];
@@ -868,14 +871,19 @@ didFailToReceiveAdWithError:(NSError *)error
 		case 0:
 			dataDetailViewController.data = @"<b>Summary:</b><br/>";
 			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:[self.inviteDetails valueForKey:@"Summary"]];
-			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:@"<p><b>Location:</b>\n"];
-			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:[self.inviteDetails valueForKey:@"Location"]];
+			if ([self.inviteDetails valueForKey:@"Location"])
+			{
+				dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:@"<p><b>Location:</b>\n"];
+				dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:[self.inviteDetails valueForKey:@"Location"]];
+			}
 			dataDetailViewController.title = @"Summary";
 			[self.navigationController pushViewController:dataDetailViewController animated:YES];
 			break;
 		case 3:
 			dataDetailViewController.data = [self.inviteDetails valueForKey:@"Description"];
 			dataDetailViewController.title = @"Description";
+			NSLog(@"data detail view length: %d", [dataDetailViewController.data length]);
+			NSLog(@"start:%@:end", dataDetailViewController.data);
 			[self.navigationController pushViewController:dataDetailViewController animated:YES];
 			break;
 		
@@ -901,6 +909,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
+	NSLog(@"In did receive memory warning...");
     [super didReceiveMemoryWarning];
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
