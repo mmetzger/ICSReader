@@ -523,6 +523,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			[self.tableView reloadData];
 			self.navigationItem.rightBarButtonItem = nil;
 			self.warningLabel.text = @"";
+			[self.view bringSubviewToFront:self.noICSView];
 			break;
 
 		default:
@@ -584,7 +585,7 @@ didFailToReceiveAdWithError:(NSError *)error
 		NSLog(@"No launchURL");
 		noICSView.autoresizingMask = UIViewAutoresizingFlexibleWidth; 
 		noICSWarningLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-		[self.view bringSubviewToFront:self.noICSView];
+		//[self.view bringSubviewToFront:self.noICSView];
 		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
 		[self showHelp]; 
 	} else {
