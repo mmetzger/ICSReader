@@ -13,6 +13,7 @@
 #import <EventKitUI/EventKitUI.h>
 #import "DateTimeTableViewCell.h"
 #import "HelpViewController.h"
+#import "DetailViewController.h"
 #import <Foundation/Foundation.h>
 
 @interface RootViewController (PrivateMethods)
@@ -671,6 +672,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			cell.detailTextLabel.text = [self.inviteDetails valueForKey:@"Location"];
 //			cell.textLabel.text = [[[NSString alloc] init] stringByAppendingFormat:@"%@\n%@", [self.inviteDetails valueForKey:@"Summary"], [inviteDetails objectForKey:@"Location"]];
 			cell.selectionStyle = UITableViewCellSelectionStyleNone;
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			return cell;
 			break;
 		case 1:
@@ -763,6 +765,8 @@ didFailToReceiveAdWithError:(NSError *)error
 			//UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+			
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			NSLog(@"In Notes...");
 			NSString *d;
 			d = [self.inviteDetails valueForKey:@"Description"];
@@ -770,7 +774,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			CGSize s;
 			s = [d sizeWithFont:f];
 			CGFloat w = [self.contentWidth floatValue];
-			CGRect contentRect = CGRectMake(10.0, 5.0, w, s.height + 10);
+			CGRect contentRect = CGRectMake(10.0, 5.0, w - 20, s.height + 10);
 			UILabel *t = [[UILabel alloc] initWithFrame:contentRect];
 			t.text = d;
 			t.numberOfLines = 0;
@@ -826,7 +830,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			CGSize s;
 			s = [d sizeWithFont:f];
 			CGFloat w = [self.contentWidth floatValue];
-			CGRect contentRect = CGRectMake(10.0, 5.0, w, s.height + 10);
+			CGRect contentRect = CGRectMake(10.0, 5.0, w - 20, s.height + 10);
 			UILabel *t = [[UILabel alloc] initWithFrame:contentRect];
 			t.text = d;
 			t.numberOfLines = 0;
@@ -856,9 +860,31 @@ didFailToReceiveAdWithError:(NSError *)error
 
 #pragma mark -
 #pragma mark Table view delegate
-/*
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+	DetailViewController *dataDetailViewController = [[DetailViewController alloc] init];
+	switch ([indexPath indexAtPosition:0]) {
+		case 0:
+			dataDetailViewController.data = @"<b>Summary:</b><br/>";
+			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:[self.inviteDetails valueForKey:@"Summary"]];
+			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:@"<p><b>Location:</b>\n"];
+			dataDetailViewController.data = [dataDetailViewController.data stringByAppendingString:[self.inviteDetails valueForKey:@"Location"]];
+			dataDetailViewController.title = @"Summary";
+			[self.navigationController pushViewController:dataDetailViewController animated:YES];
+			break;
+		case 3:
+			dataDetailViewController.data = [self.inviteDetails valueForKey:@"Description"];
+			dataDetailViewController.title = @"Description";
+			[self.navigationController pushViewController:dataDetailViewController animated:YES];
+			break;
+		
+		default:
+			break;
+	}
+	
+	[dataDetailViewController release];
+	
 	/*
 	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
      // ...
@@ -866,7 +892,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	 [self.navigationController pushViewController:detailViewController animated:YES];
 	 [detailViewController release];
 	 */
-//}
+}
 
 
 
