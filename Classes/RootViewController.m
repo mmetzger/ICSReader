@@ -563,7 +563,11 @@ didFailToReceiveAdWithError:(NSError *)error
 	NSLog(@"In RootViewController:viewDidLoad - URL: %@", self.launchURL);
 	self.tableView.sectionFooterHeight = 0.0;
 	
-	self.helpViewController = [[HelpViewController alloc] init];
+	if (self.helpViewController == nil)
+	{
+		NSLog(@"Help view controller not initialized");
+		self.helpViewController = [[HelpViewController alloc] init];
+	}
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHelp) name:@"ShowHelp" object:nil];
 	
 	sectionArray = [[NSArray arrayWithObjects:@"Title & Location", @"When", @"Organizer", @"Details", nil] retain];
@@ -580,6 +584,8 @@ didFailToReceiveAdWithError:(NSError *)error
 	self.navigationItem.leftBarButtonItem = leftButton;
 	NSLog(@"Adding help button...");
 	[leftButton release];
+	
+	NSLog(@"Current View: %@", [self.view description]);
 	
 	if (!self.launchURL) { 
 		NSLog(@"No launchURL");
