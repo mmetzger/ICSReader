@@ -20,7 +20,7 @@
 - (void) showIntro {
 	//NSArray *bundle = [[NSBundle mainBundle] loadNibNamed:@"IntroView" owner:self options:nil];
 	//[window addSubview:[bundle objectAtIndex:0]] ;
-	NSLog(@"Firing ShowHelp");
+	//NSLog(@"Firing ShowHelp");
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"ShowHelp" object:nil];
 	self.isIntro = YES;
 }
@@ -36,8 +36,8 @@
 	//UIAlertView *someError = [[UIAlertView alloc] initWithTitle:@"Launch URL" message:[tmpurl absoluteString] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 	//[someError show];
 	//[someError release];
-	NSLog(@"Launch Options: %@", launchOptions);
-	NSLog(@"URL: %@", tmpurl);
+	//NSLog(@"Launch Options: %@", launchOptions);
+	//NSLog(@"URL: %@", tmpurl);
 	
     // Add the navigation controller's view to the window and display.
 	[window addSubview:navigationController.view];
@@ -47,14 +47,14 @@
 	//	UIAlertView *someError2 = [[UIAlertView alloc] initWithTitle:@"Setting launchURL!" message:[tmpurl absoluteString] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 	//	[someError2 show];
 	//	[someError2 release];
-		NSLog(@"Setting launchURL to %@", tmpurl);
+		//NSLog(@"Setting launchURL to %@", tmpurl);
 		self.launchURL = tmpurl;
 		[window bringSubviewToFront:navigationController.view];
 		// Not fond of this, but can't get the data to parse on first setup.  Force a call to refresh to make it properly visible.
 		[(RootViewController *)navigationController.visibleViewController refresh];
 		self.isIntro = NO;
 	} else {
-		//NSLog(@"No url - calling ShowHelp");
+		////NSLog(@"No url - calling ShowHelp");
 		//[self showIntro];
 	}
 
@@ -66,16 +66,16 @@
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
-	NSLog(@"In handleOpenURL\nURL: %@", url);
+	//NSLog(@"In handleOpenURL\nURL: %@", url);
 	if (url != nil)
 	{
-		NSLog(@"No intro - showing base frame");
+		//NSLog(@"No intro - showing base frame");
 		self.launchURL = url;
 		[window bringSubviewToFront:navigationController.view];
 		self.isIntro = NO;
 		return YES;
 	} else {
-		NSLog(@"URL is nil, showing help");
+		//NSLog(@"URL is nil, showing help");
 		[self showIntro];
 		return NO;
 	}
@@ -110,7 +110,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
-	NSLog(@"In DidBecomeActive...");
+	//NSLog(@"In DidBecomeActive...");
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshSent" object:nil];
 }
 

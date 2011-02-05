@@ -111,17 +111,17 @@ didFailToReceiveAdWithError:(NSError *)error
 
 - (NSDate *) parseDate:(NSString *)strDate timezone:(NSString *)tzid
 {
-	NSLog(@"Source string: %@", strDate);
+	//NSLog(@"Source string: %@", strDate);
 	NSDateFormatter *formatter = [[[NSDateFormatter alloc] init] autorelease];
 	[formatter setDateFormat:@"yyyyMMddHHmmss"];
 	[formatter setTimeZone:[NSTimeZone timeZoneWithName:tzid]];
 	
 	strDate = [[strDate stringByReplacingOccurrencesOfString:@"Z" withString:@""] stringByReplacingOccurrencesOfString:@"T" withString:@""];
 	
-	NSLog(@"Cleaned string: %@", strDate);
+	//NSLog(@"Cleaned string: %@", strDate);
 	NSDate *sourceDate = [formatter dateFromString:strDate];
 	
-	NSLog(@"Date: %@", sourceDate);
+	//NSLog(@"Date: %@", sourceDate);
 	
 	return sourceDate;
 }
@@ -137,7 +137,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	NSString *str = [[NSString alloc] initWithString:@"%04d%02d%02d%02d%02d%02d", t.year, t.month, t.day, t.hour, t.minute, t.second];
 	
 	NSDate *d = [formatter dateFromString:str];
-	NSLog(@"DateNew: %@", d);
+	//NSLog(@"DateNew: %@", d);
 	
 	return d;
   */
@@ -153,7 +153,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	NSError *error;
 	NSString *contents = [[[NSString alloc] initWithContentsOfURL:launchURL usedEncoding:&encoding error:&error] autorelease];
 	//urlContentsTextView.text = contents;
-	NSLog(@"File Contents: %@", contents);
+	//NSLog(@"File Contents: %@", contents);
 	
 	if (contents) {
 		
@@ -163,11 +163,11 @@ didFailToReceiveAdWithError:(NSError *)error
 			
 			icalcomponent *tzinfo = icalcomponent_get_first_component(root, ICAL_VTIMEZONE_COMPONENT);
 			icaltimezone *zone = icaltimezone_new();
-			NSLog(@"Betting this is an issue in the tzinfo section...");
+			//NSLog(@"Betting this is an issue in the tzinfo section...");
 			NSString *timezonename = @"GMT";
 			
 			if (tzinfo) {
-				NSLog(@"In tzinfo check");
+				//NSLog(@"In tzinfo check");
 				const char *tzid;
 				if (icaltimezone_set_component(zone, tzinfo)) {
 					tzid = icaltimezone_get_tzid(zone);
@@ -179,7 +179,7 @@ didFailToReceiveAdWithError:(NSError *)error
 				}
 			}
 			
-			NSLog(@"Timezone is %@", timezonename);
+			//NSLog(@"Timezone is %@", timezonename);
 			
 			icalcomponent *c = icalcomponent_get_first_component(root, ICAL_VEVENT_COMPONENT);
 		
@@ -190,12 +190,12 @@ didFailToReceiveAdWithError:(NSError *)error
 					icalvalue *v = icalproperty_get_value(description); 
 					NSString *descriptionString = [[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
 					descriptionString = [descriptionString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-					NSLog(@"Description: %@", descriptionString);
+					//NSLog(@"Description: %@", descriptionString);
 					//descriptionTextView.text = descriptionString;
 					[calendarDetails setValue:descriptionString forKey:@"Description"];
 					//p = icalcomponent_get_next_property(c, ICAL_DESCRIPTION_PROPERTY);
 				} else {
-					NSLog(@"No Description found");
+					//NSLog(@"No Description found");
 					//descriptionTextView.text = @"";
 				}
 
@@ -206,11 +206,11 @@ didFailToReceiveAdWithError:(NSError *)error
 					icalvalue *v = icalproperty_get_value(location);
 					NSString *locationString = [[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
 					locationString = [locationString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
-					NSLog(@"Location: %@", locationString);
+					//NSLog(@"Location: %@", locationString);
 					//whereTextField.text = locationString;
 					[calendarDetails setValue:locationString forKey:@"Location"];
 				} else {
-					NSLog(@"No Location found");
+					//NSLog(@"No Location found");
 					//whereTextField.text = @"";
 				}
 			
@@ -242,14 +242,14 @@ didFailToReceiveAdWithError:(NSError *)error
 					d_tm2.tm_hour = t2.hour;
 					d_tm2.tm_min = t2.minute;
 					
-					NSLog(@"Start: %d-%02d-%02d %02d:%02d", d_tm.tm_year, d_tm.tm_mon, d_tm.tm_mday, d_tm.tm_hour, d_tm.tm_min);
-					NSLog(@"End: %d-%02d-%02d %02d:%02d", d_tm2.tm_year, d_tm2.tm_mon, d_tm2.tm_mday, d_tm2.tm_hour, d_tm2.tm_min);
+					//NSLog(@"Start: %d-%02d-%02d %02d:%02d", d_tm.tm_year, d_tm.tm_mon, d_tm.tm_mday, d_tm.tm_hour, d_tm.tm_min);
+					//NSLog(@"End: %d-%02d-%02d %02d:%02d", d_tm2.tm_year, d_tm2.tm_mon, d_tm2.tm_mday, d_tm2.tm_hour, d_tm2.tm_min);
 					
 					
-					//NSLog(icalproperty_get_dtstart(start));
+					////NSLog(icalproperty_get_dtstart(start));
 //					
 					
-					NSLog(@"End Date via ical_get_dtend: %@", icalproperty_get_dtend(end));
+					//NSLog(@"End Date via ical_get_dtend: %@", icalproperty_get_dtend(end));
 					*/
 					
 					NSDate *startDate = [self parseDate:[NSString stringWithCString:icalvalue_as_ical_string(sv) encoding:NSUTF8StringEncoding] timezone:timezonename];
@@ -259,7 +259,7 @@ didFailToReceiveAdWithError:(NSError *)error
 					//NSDate *s = [self par
 					//startDate = [startDate initWithTimeIntervalSinceNow:<#(NSTimeInterval)secs#>
 				
-					NSLog(@"Starts: %@, Ends: %@", startDate, endDate);
+					//NSLog(@"Starts: %@, Ends: %@", startDate, endDate);
 					//whenTextField.text = [NSString stringWithFormat:@"%@ - %@", startDate, endDate];
 				
 					[calendarDetails setValue:startDate forKey:@"StartDate"];
@@ -306,10 +306,10 @@ didFailToReceiveAdWithError:(NSError *)error
 						}
 					}
 					[calendarDetails setValue:resp forKey:@"FormattedDateTime"];
-					NSLog(@"Formatted dt: %@", resp);
+					//NSLog(@"Formatted dt: %@", resp);
 					//				[[[NSString stringWithCString:icalvalue_as_ical_string(sv) encoding:NSUTF8StringEncoding] stringByAppendingString:@" - "] stringByAppendingString:[NSString stringWithCString:icalvalue_as_ical_string(ev) encoding:NSUTF8StringEncoding]];
 				} else {
-					NSLog(@"Start / End not found");
+					//NSLog(@"Start / End not found");
 					[calendarDetails setValue:nil forKey:@"FormattedDateTime"];
 					//whenTextField.text = @"";
 				}
@@ -319,7 +319,7 @@ didFailToReceiveAdWithError:(NSError *)error
 				{
 					const char *tzid;
 					tzid = icalproperty_get_tzid(tzidprop);
-					NSLog(@"Timezone: %s", tzid);
+					//NSLog(@"Timezone: %s", tzid);
 				}
 				 */
 				//icalproperty *attendees = icalcomponent_get_first_property(c, ICAL_
@@ -329,24 +329,24 @@ didFailToReceiveAdWithError:(NSError *)error
 				if (organizer) {
 					icalvalue *v = icalproperty_get_value(organizer);
 					icalparameter *name = icalproperty_get_first_parameter(organizer, ICAL_CN_PARAMETER);
-					NSLog(@"Organizer: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
+					//NSLog(@"Organizer: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
 				
 					NSString *organizer;
 					NSString *organizercn;
 					if (name) {
 						char *n = icalparameter_get_cn(name);
 						organizercn = [NSString stringWithCString:n encoding:NSUTF8StringEncoding];
-						NSLog(@"Organizer CN: %@", organizercn);
+						//NSLog(@"Organizer CN: %@", organizercn);
 						//organizerTextField.text = [NSString stringWithCString:n encoding:NSUTF8StringEncoding];
 						[calendarDetails setValue:organizercn forKey:@"OrganizerCN"];
 					}
 					organizer = [[[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] componentsSeparatedByString:@":"] objectAtIndex:1];
-					NSLog(@"Organizer: %@", organizer);
+					//NSLog(@"Organizer: %@", organizer);
 					[calendarDetails setValue:organizer forKey:@"Organizer"];
 
 				
 				} else {
-					NSLog(@"Organizer not found");
+					//NSLog(@"Organizer not found");
 					//organizerTextField.text = @"";
 				}
 			
@@ -354,30 +354,30 @@ didFailToReceiveAdWithError:(NSError *)error
 			
 				if (status) {
 					icalvalue *v = icalproperty_get_value(status);
-					NSLog(@"Status: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
+					//NSLog(@"Status: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
 					[calendarDetails setValue:[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] forKey:@"Status"];
 				} else {
-					NSLog(@"Status not found");
+					//NSLog(@"Status not found");
 				}
 			
 				icalproperty *summary = icalcomponent_get_first_property(c, ICAL_SUMMARY_PROPERTY);
 			
 				if (summary) {
 					icalvalue *v = icalproperty_get_value(summary);
-					NSLog(@"Summary: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
+					//NSLog(@"Summary: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
 					[calendarDetails setValue:[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] forKey:@"Summary"];
 				} else {
-					NSLog(@"Summary not found");
+					//NSLog(@"Summary not found");
 				}
 			
 				icalproperty *uid = icalcomponent_get_first_property(c, ICAL_UID_PROPERTY);
 			
 				if (uid) {
 					icalvalue *v = icalproperty_get_value(uid);
-					NSLog(@"UID: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
+					//NSLog(@"UID: %@", [NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding]);
 					[calendarDetails setValue:[NSString stringWithCString:icalvalue_as_ical_string(v) encoding:NSUTF8StringEncoding] forKey:@"UID"];
 				} else {
-					NSLog(@"UID not found");
+					//NSLog(@"UID not found");
 				}
 			
 				c = icalcomponent_get_next_component(root, ICAL_VEVENT_COMPONENT);
@@ -396,7 +396,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			rightButton.enabled = YES;
 	
 			self.navigationItem.rightBarButtonItem = rightButton;
-			NSLog(@"Adding button...");
+			//NSLog(@"Adding button...");
 			[rightButton release];
 			
 			// Check if there's an event at the same time on the calendar
@@ -406,13 +406,13 @@ didFailToReceiveAdWithError:(NSError *)error
 	
 			if ([events count] == 1)
 			{
-				NSLog(@"%d event(s) found around the same time as new event", [events count]);
+				//NSLog(@"%d event(s) found around the same time as new event", [events count]);
 				warningLabel.text = @"This event conflicts with 1 appointment";
 			} else if ([events count] > 0) {
-				NSLog(@"%d event(s) found around the same time as new event", [events count]);
+				//NSLog(@"%d event(s) found around the same time as new event", [events count]);
 				warningLabel.text = [NSString stringWithFormat:@"This event conflicts with %d appointments", [events count]];
 			} else {
-				NSLog(@"No events found at same time");
+				//NSLog(@"No events found at same time");
 				warningLabel.text = @"";
 			}
 	
@@ -424,12 +424,12 @@ didFailToReceiveAdWithError:(NSError *)error
 }
 
 - (void) saveEvent {
-	NSLog(@"Oh yeah... save Event...");
+	//NSLog(@"Oh yeah... save Event...");
 	[self addToCalendar:self.inviteDetails];
 }
 
 - (void) refresh {
-	NSLog(@"Refresh...");
+	//NSLog(@"Refresh...");
 	[self.navigationController popToRootViewControllerAnimated:NO];
 	ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.launchURL = appDelegate.launchURL;
@@ -450,9 +450,9 @@ didFailToReceiveAdWithError:(NSError *)error
 #pragma mark -
 #pragma mark Help Page
 - (void) showHelp {
-	NSLog(@"Help...");
-	NSLog(@"Visible View Controller: %@", self.navigationController.visibleViewController.title);
-	NSLog(@"Top View Controller: %@", self.navigationController.topViewController.title);
+	//NSLog(@"Help...");
+	//NSLog(@"Visible View Controller: %@", self.navigationController.visibleViewController.title);
+	//NSLog(@"Top View Controller: %@", self.navigationController.topViewController.title);
 	if (self.navigationController.visibleViewController.title == @"ICS Reader")
 	{
 		[self.navigationController popViewControllerAnimated:NO];
@@ -461,7 +461,7 @@ didFailToReceiveAdWithError:(NSError *)error
 		[self.navigationController pushViewController:self.helpViewController animated:YES];
 	}
 	@catch (NSException * e) {
-		NSLog(@"Exception: %@", e);
+		//NSLog(@"Exception: %@", e);
 	}
 }
 
@@ -486,7 +486,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 - (void) addToCalendar:(NSMutableDictionary *)calDetails
 {
-	NSLog(@"In AddToCalendar: %@", calDetails);
+	//NSLog(@"In AddToCalendar: %@", calDetails);
 
 	EKEventEditViewController *addController = [[EKEventEditViewController alloc] initWithNibName:nil bundle:nil];
 	
@@ -521,10 +521,10 @@ didFailToReceiveAdWithError:(NSError *)error
 	
 	switch (action) {
 		case EKEventEditViewActionCanceled:
-			NSLog(@"Event not saved...");
+			//NSLog(@"Event not saved...");
 			break;
 		case EKEventEditViewActionSaved:
-			NSLog(@"Chose to save event...");
+			//NSLog(@"Chose to save event...");
 			[controller.eventStore saveEvent:controller.event span:EKSpanThisEvent error:&error];
 			UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Calendar" message:@"Calendar entry saved!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
 			[alert show];
@@ -572,12 +572,12 @@ didFailToReceiveAdWithError:(NSError *)error
 										  
 	self.launchURL = appDelegate.launchURL;
 	
-	NSLog(@"In RootViewController:viewDidLoad - URL: %@", self.launchURL);
+	//NSLog(@"In RootViewController:viewDidLoad - URL: %@", self.launchURL);
 	self.tableView.sectionFooterHeight = 0.0;
 	
 	if (self.helpViewController == nil)
 	{
-		NSLog(@"Help view controller not initialized");
+		//NSLog(@"Help view controller not initialized");
 		self.helpViewController = [[HelpViewController alloc] init];
 	}
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showHelp) name:@"ShowHelp" object:nil];
@@ -594,20 +594,20 @@ didFailToReceiveAdWithError:(NSError *)error
 	leftButton.enabled = YES;
 	
 	self.navigationItem.leftBarButtonItem = leftButton;
-	NSLog(@"Adding help button...");
+	//NSLog(@"Adding help button...");
 	[leftButton release];
 	
-	NSLog(@"Current View: %@", [self.view description]);
+	//NSLog(@"Current View: %@", [self.view description]);
 	
 	if (!self.launchURL) { 
-		NSLog(@"No launchURL");
+		//NSLog(@"No launchURL");
 		noICSView.autoresizingMask = UIViewAutoresizingFlexibleWidth; 
 		noICSWarningLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		//[self.view bringSubviewToFront:self.noICSView];
 		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
 		[self showHelp]; 
 	} else {
-		NSLog(@"LaunchURL defined");
+		//NSLog(@"LaunchURL defined");
 		[self.view sendSubviewToBack:self.noICSView];
 	}
 
@@ -616,7 +616,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 /*
 - (void)viewWillAppear:(BOOL)animated {
-	NSLog(@"In rootViewController - viewWillAppear");
+	//NSLog(@"In rootViewController - viewWillAppear");
     [super viewWillAppear:animated];
 }
 */
@@ -668,13 +668,13 @@ didFailToReceiveAdWithError:(NSError *)error
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {	
-	//NSLog(@"In titleForHeaderInSection: %d", section);
+	////NSLog(@"In titleForHeaderInSection: %d", section);
 	return (NSString *)[sectionArray objectAtIndex:section];
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"In cellForRowAtIndexPath: %@", indexPath);
+    //NSLog(@"In cellForRowAtIndexPath: %@", indexPath);
 	static NSString *CellIdentifier;// = @"Cell";
     //if (cell == nil) {
     //    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
@@ -686,8 +686,8 @@ didFailToReceiveAdWithError:(NSError *)error
 			if (cell == nil) {
 				cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
 			}
-			NSLog(@"In title & location");
-			NSLog(@"Summary: %@", [self.inviteDetails valueForKey:@"Summary"]);
+			//NSLog(@"In title & location");
+			//NSLog(@"Summary: %@", [self.inviteDetails valueForKey:@"Summary"]);
 			cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
 			cell.detailTextLabel.lineBreakMode = UILineBreakModeWordWrap;
 			cell.textLabel.text = [self.inviteDetails valueForKey:@"Summary"];
@@ -708,7 +708,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			//cell = dtTableCell;
 
 			//cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
-			NSLog(@"In Date...");
+			//NSLog(@"In Date...");
 			//cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
 			//cell.textLabel.text = [[[NSString alloc] init] stringByAppendingFormat:@"Starts: %@", [self.inviteDetails valueForKey:@"StartDate"]];
 			//cell.detailTextLabel.font = cell.textLabel.font;
@@ -788,7 +788,7 @@ didFailToReceiveAdWithError:(NSError *)error
     
 			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 			
-			NSLog(@"In Notes...");
+			//NSLog(@"In Notes...");
 			NSString *d = [self.inviteDetails valueForKey:@"Description"];
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 			
@@ -804,7 +804,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			[cell.contentView addSubview:t];
 			[t release];
 			//cell.textLabel.text = [[[NSString alloc] init] stringByAppendingFormat:@"%@", [self.inviteDetails valueForKey:@"Description"]];
-			//NSLog(@"%@", cell.textLabel.text);
+			////NSLog(@"%@", cell.textLabel.text);
 			//cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
 			
 			cell.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -901,8 +901,8 @@ didFailToReceiveAdWithError:(NSError *)error
 		case 3:
 			dataDetailViewController.data = [self.inviteDetails valueForKey:@"Description"];
 			dataDetailViewController.title = @"Description";
-			NSLog(@"data detail view length: %d", [dataDetailViewController.data length]);
-			//NSLog(@"start:%@:end", dataDetailViewController.data);
+			//NSLog(@"data detail view length: %d", [dataDetailViewController.data length]);
+			////NSLog(@"start:%@:end", dataDetailViewController.data);
 			[self.navigationController pushViewController:dataDetailViewController animated:YES];
 			break;
 		
@@ -928,7 +928,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 - (void)didReceiveMemoryWarning {
     // Releases the view if it doesn't have a superview.
-	NSLog(@"In did receive memory warning...");
+	//NSLog(@"In did receive memory warning...");
     [super didReceiveMemoryWarning];
     
     // Relinquish ownership any cached data, images, etc that aren't in use.
