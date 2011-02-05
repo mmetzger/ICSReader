@@ -451,7 +451,18 @@ didFailToReceiveAdWithError:(NSError *)error
 #pragma mark Help Page
 - (void) showHelp {
 	NSLog(@"Help...");
-	[self.navigationController pushViewController:self.helpViewController animated:YES];
+	NSLog(@"Visible View Controller: %@", self.navigationController.visibleViewController.title);
+	NSLog(@"Top View Controller: %@", self.navigationController.topViewController.title);
+	if (self.navigationController.visibleViewController.title == @"ICS Reader")
+	{
+		[self.navigationController popViewControllerAnimated:NO];
+	}
+	@try {
+		[self.navigationController pushViewController:self.helpViewController animated:YES];
+	}
+	@catch (NSException * e) {
+		NSLog(@"Exception: %@", e);
+	}
 }
 
 - (void) didRotate {
@@ -462,6 +473,7 @@ didFailToReceiveAdWithError:(NSError *)error
 		self.bannerView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier480x32;
 		self.contentWidth = [NSNumber numberWithFloat:440.0];
 	}
+	[self.tableView reloadData];
 
 }
 
@@ -890,7 +902,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			dataDetailViewController.data = [self.inviteDetails valueForKey:@"Description"];
 			dataDetailViewController.title = @"Description";
 			NSLog(@"data detail view length: %d", [dataDetailViewController.data length]);
-			NSLog(@"start:%@:end", dataDetailViewController.data);
+			//NSLog(@"start:%@:end", dataDetailViewController.data);
 			[self.navigationController pushViewController:dataDetailViewController animated:YES];
 			break;
 		
