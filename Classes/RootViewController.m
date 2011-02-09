@@ -142,6 +142,12 @@ didFailToReceiveAdWithError:(NSError *)error
 	return d;
   */
 }
+
+- (void)clearExceptionFlag
+{
+	NSLog(@"Clearing Exception Flag...");
+	exceptionFired = NO;
+}
     
 
 - (void)parseICS {
@@ -156,10 +162,10 @@ didFailToReceiveAdWithError:(NSError *)error
 	//NSLog(@"File Contents: %@", contents);
 	
 	if (contents) {
-		
-		icalcomponent *root = icalparser_parse_string([contents cStringUsingEncoding:NSUTF8StringEncoding]);
-	
-		if (root) {
+		@try {
+			NSLog(@"Parsing...");
+			icalcomponent *root = icalparser_parse_string([contents cStringUsingEncoding:NSUTF8StringEncoding]);
+			if (root) {
 			
 			icalcomponent *tzinfo = icalcomponent_get_first_component(root, ICAL_VTIMEZONE_COMPONENT);
 			icaltimezone *zone = icaltimezone_new();
@@ -419,7 +425,20 @@ didFailToReceiveAdWithError:(NSError *)error
 	
 			[calendarDetails release];
 		}
-		
+		}
+		@catch (NSException * e) {
+			NSLog(@"Exception Logged - Exception Fired Recently: %@", (exceptionFired ? @"YES" : @"NO"));
+			if (!exceptionFired)
+			{
+				[self.view bringSubviewToFront:self.noICSView];
+				self.noICSWarningLabel.text = @"There was a problem parsing this ICS file - please contact support@psychopigeon.com with a copy of the ICS file for further assistance.";
+				exceptionFired = YES;
+				//UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"ICS Reader Error" message:@"There was a problem parsing this ICS file - please contact support@psychopigeon.com with a copy of the ICS file for further assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
+				//[alert show];	
+				[self performSelector:@selector(clearExceptionFlag) withObject:nil afterDelay:5.0];
+			}
+			NSLog(@"Exception %@", e);
+		}
 	}
 }
 
@@ -444,7 +463,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	//	[someError2 show];
 	//	[someError2 release];
 	[self parseICS];
-	[self.tableView reloadData];
+	//[self.tableView reloadData];
 }
 
 #pragma mark -
@@ -652,7 +671,7 @@ didFailToReceiveAdWithError:(NSError *)error
 
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-	if (self.launchURL)
+	if (self.launchURL && !exceptionFired)
 	{
 		return 4;
 	} else {

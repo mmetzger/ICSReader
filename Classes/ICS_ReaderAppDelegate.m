@@ -47,11 +47,12 @@
 	//	UIAlertView *someError2 = [[UIAlertView alloc] initWithTitle:@"Setting launchURL!" message:[tmpurl absoluteString] delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
 	//	[someError2 show];
 	//	[someError2 release];
-		//NSLog(@"Setting launchURL to %@", tmpurl);
+		NSLog(@"Setting launchURL to %@", tmpurl);
 		self.launchURL = tmpurl;
 		[window bringSubviewToFront:navigationController.view];
 		// Not fond of this, but can't get the data to parse on first setup.  Force a call to refresh to make it properly visible.
 		[(RootViewController *)navigationController.visibleViewController refresh];
+		//[[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshSent" object:nil];
 		self.isIntro = NO;
 	} else {
 		////NSLog(@"No url - calling ShowHelp");
@@ -110,7 +111,7 @@
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
-	//NSLog(@"In DidBecomeActive...");
+	NSLog(@"In DidBecomeActive...");
 	[[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshSent" object:nil];
 }
 

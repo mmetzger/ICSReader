@@ -16,6 +16,7 @@
 @interface RootViewController : UIViewController <EKEventEditViewDelegate> {
 	NSArray *sectionArray;
 	NSURL *launchURL;
+	BOOL exceptionFired;
 	//NSMutableDictionary *inviteDetails;
 }
 
@@ -41,4 +42,5 @@
 - (void) refresh;
 - (void) addToCalendar:(NSMutableDictionary *)calDetails;
 - (void) showHelp;
+- (void) clearExceptionFlag;
 @end
