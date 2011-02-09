@@ -430,13 +430,16 @@ didFailToReceiveAdWithError:(NSError *)error
 			NSLog(@"Exception Logged - Exception Fired Recently: %@", (exceptionFired ? @"YES" : @"NO"));
 			if (!exceptionFired)
 			{
-				[self.view bringSubviewToFront:self.noICSView];
-				self.noICSWarningLabel.text = @"There was a problem parsing this ICS file - please contact support@psychopigeon.com with a copy of the ICS file for further assistance.";
 				exceptionFired = YES;
 				//UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"ICS Reader Error" message:@"There was a problem parsing this ICS file - please contact support@psychopigeon.com with a copy of the ICS file for further assistance." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] autorelease];
 				//[alert show];	
 				[self performSelector:@selector(clearExceptionFlag) withObject:nil afterDelay:5.0];
-			}
+				}
+			[self.view bringSubviewToFront:self.noICSView];
+			self.noICSWarningLabel.text = @"There was a problem parsing this ICS file - please contact support@psychopigeon.com with a copy of the ICS file for further assistance.\n\n\n\n\n\n\n";
+			self.warningLabel.text = @"";
+			self.navigationItem.rightBarButtonItem = nil;
+			self.inviteDetails = nil;
 			NSLog(@"Exception %@", e);
 		}
 	}
@@ -448,13 +451,13 @@ didFailToReceiveAdWithError:(NSError *)error
 }
 
 - (void) refresh {
-	//NSLog(@"Refresh...");
+	NSLog(@"Refresh...");
 	[self.navigationController popToRootViewControllerAnimated:NO];
 	ICS_ReaderAppDelegate *appDelegate = (ICS_ReaderAppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.launchURL = appDelegate.launchURL;
 	if (!self.launchURL) { 
 		[self.view bringSubviewToFront:self.noICSView];
-		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
+		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info.\n\n\n\n\n\n\n";
 		[self showHelp]; 
 	} else {
 		[self.view sendSubviewToBack:self.noICSView];
@@ -463,7 +466,7 @@ didFailToReceiveAdWithError:(NSError *)error
 	//	[someError2 show];
 	//	[someError2 release];
 	[self parseICS];
-	//[self.tableView reloadData];
+	[self.tableView reloadData];
 }
 
 #pragma mark -
@@ -554,6 +557,7 @@ didFailToReceiveAdWithError:(NSError *)error
 			[self.tableView reloadData];
 			self.navigationItem.rightBarButtonItem = nil;
 			self.warningLabel.text = @"";
+			self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info.\n\n\n\n\n\n\n";
 			[self.view bringSubviewToFront:self.noICSView];
 			break;
 
@@ -623,7 +627,7 @@ didFailToReceiveAdWithError:(NSError *)error
 		noICSView.autoresizingMask = UIViewAutoresizingFlexibleWidth; 
 		noICSWarningLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 		//[self.view bringSubviewToFront:self.noICSView];
-		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info";
+		self.noICSWarningLabel.text = @"No ICS file selected - Please open an ICS file - refer to help for more info.\n\n\n\n\n\n\n";
 		[self showHelp]; 
 	} else {
 		//NSLog(@"LaunchURL defined");

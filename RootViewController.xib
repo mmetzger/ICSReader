@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="23"/>
+			<integer value="24"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -164,17 +164,17 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 					</object>
 					<object class="IBUIView" id="263338092">
 						<reference key="NSNextResponder" ref="500487472"/>
-						<int key="NSvFlags">310</int>
+						<int key="NSvFlags">274</int>
 						<object class="NSMutableArray" key="NSSubviews">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBUILabel" id="162892622">
 								<reference key="NSNextResponder" ref="263338092"/>
-								<int key="NSvFlags">274</int>
-								<string key="NSFrame">{{20, 20}, {280, 120}}</string>
+								<int key="NSvFlags">306</int>
+								<string key="NSFrame">{{20, 20}, {280, 160}}</string>
 								<reference key="NSSuperview" ref="263338092"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
-								<int key="IBUIContentMode">7</int>
+								<int key="IBUIContentMode">9</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<string key="IBUIText"/>
@@ -190,11 +190,11 @@ AAMAAAABAAEAAAFTAAMAAAAEAAACAgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 								<reference key="IBUIHighlightedColor" ref="936228354"/>
 								<int key="IBUIBaselineAdjustment">1</int>
 								<float key="IBUIMinimumFontSize">10</float>
-								<int key="IBUINumberOfLines">4</int>
+								<int key="IBUINumberOfLines">6</int>
 								<int key="IBUILineBreakMode">0</int>
 							</object>
 						</object>
-						<string key="NSFrame">{{0, 59}, {320, 160}}</string>
+						<string key="NSFrameSize">{320, 480}</string>
 						<reference key="NSSuperview" ref="500487472"/>
 						<reference key="IBUIBackgroundColor" ref="984112556"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
