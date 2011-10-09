@@ -1,7 +1,0 @@
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m:18: error: no declaration of property 'isIntro' found in the interface
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m: In function '-[ICS_ReaderAppDelegate showIntro]':
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m:23: error: request for member 'isIntro' in something not a structure or union
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m: In function '-[ICS_ReaderAppDelegate application:didFinishLaunchingWithOptions:]':
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m:53: error: request for member 'isIntro' in something not a structure or union
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m: In function '-[ICS_ReaderAppDelegate application:handleOpenURL:]':
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/ICS_ReaderAppDelegate.m:71: error: request for member 'isIntro' in something not a structure or union

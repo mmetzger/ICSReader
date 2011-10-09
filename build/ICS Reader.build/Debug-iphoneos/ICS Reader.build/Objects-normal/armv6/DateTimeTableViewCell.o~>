@@ -1,7 +1,0 @@
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:14: error: no declaration of property 'start' found in the interface
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:15: error: no declaration of property 'end' found in the interface
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m: In function '-[DateTimeTableViewCell dealloc]':
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: 'start' undeclared (first use in this function)
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: (Each undeclared identifier is reported only once
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:34: error: for each function it appears in.)
-/Users/mmetzger/Documents/Projects/iPhone/ICS Reader/Classes/DateTimeTableViewCell.m:35: error: 'end' undeclared (first use in this function)

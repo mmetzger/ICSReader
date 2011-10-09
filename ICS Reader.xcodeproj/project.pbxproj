@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		000D859B12F16EEA00BBC729 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000D859A12F16EEA00BBC729 /* HelpViewController.m */; };
+		00150B3C12FBAC1400F01FF3 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00150B3B12FBAC1400F01FF3 /* DetailViewController.m */; };
 		00C38DB012381CA8007F4953 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DAF12381CA8007F4953 /* EventKit.framework */; };
 		00C38DB212381CB0007F4953 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DB112381CB0007F4953 /* EventKitUI.framework */; };
 		00C38DC512381CF5007F4953 /* libicalvcal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C38DC412381CF5007F4953 /* libicalvcal.a */; };
@@ -33,6 +34,8 @@
 /* Begin PBXFileReference section */
 		000D859912F16EEA00BBC729 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
 		000D859A12F16EEA00BBC729 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		00150B3A12FBAC1400F01FF3 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		00150B3B12FBAC1400F01FF3 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		0054C0B81256C173002AA2E6 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		00C38DAF12381CA8007F4953 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		00C38DB112381CB0007F4953 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
@@ -93,6 +96,8 @@
 				00C4349612429E1000027E31 /* DateTimeTableViewCell.m */,
 				000D859912F16EEA00BBC729 /* HelpViewController.h */,
 				000D859A12F16EEA00BBC729 /* HelpViewController.m */,
+				00150B3A12FBAC1400F01FF3 /* DetailViewController.h */,
+				00150B3B12FBAC1400F01FF3 /* DetailViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				00C4349712429E1000027E31 /* DateTimeTableViewCell.m in Sources */,
 				000D859B12F16EEA00BBC729 /* HelpViewController.m in Sources */,
+				00150B3C12FBAC1400F01FF3 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +338,7 @@
 					"\"$(SRCROOT)/../parsecal\"",
 				);
 				PRODUCT_NAME = "ICS Reader";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3CCB7875-44F1-40A8-B373-56A6778088E6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "679C53AC-48A0-49E7-AA14-53D8E1175885";
 			};
 			name = Debug;
 		};
@@ -365,7 +371,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				LIBRARY_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/lib//**";
 				PREBINDING = NO;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F4655F9C-3244-462B-9D6E-05B36023EF43";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "679C53AC-48A0-49E7-AA14-53D8E1175885";
 				SDKROOT = iphoneos;
 				USER_HEADER_SEARCH_PATHS = "/Users/mmetzger/TestDeveloper/iOS4-fat/include//**";
 			};
