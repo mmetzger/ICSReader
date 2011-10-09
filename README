@@ -1,0 +1,3 @@
+This is the source code for an iPhone app I had in the store for a couple months.  The app could parse and render ICS calendar files, including ones from Mail.  Calendar attachments from Mail required forwarding the attachment to a service that changed the MIME type and then sent it back to the sender.  That project will be open sourced as well.
+
+This project is being put up in case of use to anyone, especially if use of libical is needed in any given application.  The licenses for the included components are as that of the original author (libical, etc.)  The license for my source code is public domain.
